@@ -5,11 +5,10 @@ from flask import Flask, request
 from pymessenger.bot import Bot
 
 import buttons as btn
+import config as conf
 
 app = Flask(__name__)
-access_token = os.getenv('ACCESS_TOKEN')
-verify_token = os.getenv('VERIFY_TOKEN')
-bot = Bot(access_token)
+bot = Bot(conf.access_token)
 
 @app.route("/", methods=['GET', 'POST'])
 def receiveMessage():
@@ -18,6 +17,7 @@ def receiveMessage():
 		return verifyToken(token_sent)
 	else:
 		output = request.get_json()
+		print(output)
 		for event in output['entry']:
 			messaging = event['messaging']
 			for message in messaging:
@@ -34,7 +34,7 @@ def receiveMessage():
 	return "Message Processed"
 
 def verifyToken(token_sent):
-	if token_sent == verify_token:
+	if token_sent == conf.verify_token:
 		return request.args.get("hub.challenge")
 	return 'Invalid verification token'
 
