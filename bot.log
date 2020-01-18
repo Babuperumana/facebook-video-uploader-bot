@@ -934,3 +934,1134 @@ TypeError: The view function did not return a valid response. The function eithe
 2020-01-18 18:17:47,773 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 18:17:47] "POST / HTTP/1.1" 200 -
 2020-01-18 18:17:52,678 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 18:17:52] "POST / HTTP/1.1" 200 -
 2020-01-18 18:17:55,430 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 18:17:55] "POST / HTTP/1.1" 200 -
+2020-01-18 21:09:55,168 - werkzeug._log - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-18 21:10:17,046 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 21:10:17] "POST / HTTP/1.1" 200 -
+2020-01-18 21:11:08,006 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 21:11:08] "POST / HTTP/1.1" 200 -
+2020-01-18 21:12:32,154 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 21:12:32] "POST / HTTP/1.1" 200 -
+2020-01-18 21:59:32,534 - werkzeug._log - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-18 21:59:54,939 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "test_app.py", line 150, in receiveMessage
+    conversationHandler(message)
+  File "test_app.py", line 126, in conversationHandler
+    elif user_data[sender_id]['conv_level'] == DATE:
+KeyError: '2634439036670118'
+2020-01-18 21:59:54,940 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 21:59:54] "POST / HTTP/1.1" 500 -
+2020-01-18 21:59:55,572 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "test_app.py", line 150, in receiveMessage
+    conversationHandler(message)
+  File "test_app.py", line 126, in conversationHandler
+    elif user_data[sender_id]['conv_level'] == DATE:
+KeyError: '2634439036670118'
+2020-01-18 21:59:55,573 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 21:59:55] "POST / HTTP/1.1" 500 -
+2020-01-18 21:59:56,888 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "test_app.py", line 150, in receiveMessage
+    conversationHandler(message)
+  File "test_app.py", line 126, in conversationHandler
+    elif user_data[sender_id]['conv_level'] == DATE:
+KeyError: '2634439036670118'
+2020-01-18 21:59:56,889 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 21:59:56] "POST / HTTP/1.1" 500 -
+2020-01-18 21:59:57,518 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "test_app.py", line 150, in receiveMessage
+    conversationHandler(message)
+  File "test_app.py", line 126, in conversationHandler
+    elif user_data[sender_id]['conv_level'] == DATE:
+KeyError: '2634439036670118'
+2020-01-18 21:59:57,519 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 21:59:57] "POST / HTTP/1.1" 500 -
+2020-01-18 21:59:58,695 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "test_app.py", line 150, in receiveMessage
+    conversationHandler(message)
+  File "test_app.py", line 126, in conversationHandler
+    elif user_data[sender_id]['conv_level'] == DATE:
+KeyError: '2634439036670118'
+2020-01-18 21:59:58,696 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 21:59:58] "POST / HTTP/1.1" 500 -
+2020-01-18 21:59:59,327 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "test_app.py", line 150, in receiveMessage
+    conversationHandler(message)
+  File "test_app.py", line 126, in conversationHandler
+    elif user_data[sender_id]['conv_level'] == DATE:
+KeyError: '2634439036670118'
+2020-01-18 21:59:59,327 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 21:59:59] "POST / HTTP/1.1" 500 -
+2020-01-18 22:00:00,662 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "test_app.py", line 150, in receiveMessage
+    conversationHandler(message)
+  File "test_app.py", line 126, in conversationHandler
+    elif user_data[sender_id]['conv_level'] == DATE:
+KeyError: '2634439036670118'
+2020-01-18 22:00:00,662 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 22:00:00] "POST / HTTP/1.1" 500 -
+2020-01-18 22:01:56,444 - werkzeug._log - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-18 22:04:27,140 - werkzeug._log - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-18 22:04:45,373 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 22:04:45] "POST / HTTP/1.1" 200 -
+2020-01-18 22:04:53,768 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 22:04:53] "POST / HTTP/1.1" 200 -
+2020-01-18 22:08:10,693 - werkzeug._log - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-18 22:08:16,741 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "test_app.py", line 141, in receiveMessage
+    conversationHandler(message)
+  File "test_app.py", line 117, in conversationHandler
+    elif user_data[sender_id]['conv_level'] == DATE:
+KeyError: 'conv_level'
+2020-01-18 22:08:16,744 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 22:08:16] "POST / HTTP/1.1" 500 -
+2020-01-18 22:08:17,024 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "test_app.py", line 141, in receiveMessage
+    conversationHandler(message)
+  File "test_app.py", line 117, in conversationHandler
+    elif user_data[sender_id]['conv_level'] == DATE:
+KeyError: 'conv_level'
+2020-01-18 22:08:17,025 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 22:08:17] "POST / HTTP/1.1" 500 -
+2020-01-18 22:08:17,682 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "test_app.py", line 141, in receiveMessage
+    conversationHandler(message)
+  File "test_app.py", line 117, in conversationHandler
+    elif user_data[sender_id]['conv_level'] == DATE:
+KeyError: 'conv_level'
+2020-01-18 22:08:17,682 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 22:08:17] "POST / HTTP/1.1" 500 -
+2020-01-18 22:08:17,897 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "test_app.py", line 141, in receiveMessage
+    conversationHandler(message)
+  File "test_app.py", line 117, in conversationHandler
+    elif user_data[sender_id]['conv_level'] == DATE:
+KeyError: 'conv_level'
+2020-01-18 22:08:17,898 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 22:08:17] "POST / HTTP/1.1" 500 -
+2020-01-18 22:08:18,592 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "test_app.py", line 141, in receiveMessage
+    conversationHandler(message)
+  File "test_app.py", line 117, in conversationHandler
+    elif user_data[sender_id]['conv_level'] == DATE:
+KeyError: 'conv_level'
+2020-01-18 22:08:18,593 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 22:08:18] "POST / HTTP/1.1" 500 -
+2020-01-18 22:08:18,801 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "test_app.py", line 141, in receiveMessage
+    conversationHandler(message)
+  File "test_app.py", line 117, in conversationHandler
+    elif user_data[sender_id]['conv_level'] == DATE:
+KeyError: 'conv_level'
+2020-01-18 22:08:18,803 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 22:08:18] "POST / HTTP/1.1" 500 -
+2020-01-18 22:08:20,437 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "test_app.py", line 141, in receiveMessage
+    conversationHandler(message)
+  File "test_app.py", line 117, in conversationHandler
+    elif user_data[sender_id]['conv_level'] == DATE:
+KeyError: 'conv_level'
+2020-01-18 22:08:20,438 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 22:08:20] "POST / HTTP/1.1" 500 -
+2020-01-18 22:08:20,718 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "test_app.py", line 141, in receiveMessage
+    conversationHandler(message)
+  File "test_app.py", line 117, in conversationHandler
+    elif user_data[sender_id]['conv_level'] == DATE:
+KeyError: 'conv_level'
+2020-01-18 22:08:20,719 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 22:08:20] "POST / HTTP/1.1" 500 -
+2020-01-18 22:10:03,660 - werkzeug._log - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-18 22:10:09,682 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "test_app.py", line 141, in receiveMessage
+    conversationHandler(message)
+  File "test_app.py", line 117, in conversationHandler
+    elif user_data[sender_id]['conv_level'] == DATE:
+KeyError: 'conv_level'
+2020-01-18 22:10:09,686 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 22:10:09] "POST / HTTP/1.1" 500 -
+2020-01-18 22:10:09,894 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "test_app.py", line 141, in receiveMessage
+    conversationHandler(message)
+  File "test_app.py", line 117, in conversationHandler
+    elif user_data[sender_id]['conv_level'] == DATE:
+KeyError: 'conv_level'
+2020-01-18 22:10:09,894 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 22:10:09] "POST / HTTP/1.1" 500 -
+2020-01-18 22:26:12,814 - werkzeug._log - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-18 22:26:37,198 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 22:26:37] "POST / HTTP/1.1" 200 -
+2020-01-18 22:27:16,062 - werkzeug._log - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-18 22:27:28,634 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 22:27:28] "POST / HTTP/1.1" 200 -
+2020-01-18 22:27:56,501 - werkzeug._log - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-18 22:28:09,517 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 22:28:09] "POST / HTTP/1.1" 200 -
+2020-01-18 22:28:10,372 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "test_app.py", line 147, in receiveMessage
+    conversationHandler(message)
+  File "test_app.py", line 126, in conversationHandler
+    print(conv_level + str(sender_id))
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+2020-01-18 22:28:10,373 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 22:28:10] "POST / HTTP/1.1" 500 -
+2020-01-18 22:28:10,591 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "test_app.py", line 147, in receiveMessage
+    conversationHandler(message)
+  File "test_app.py", line 126, in conversationHandler
+    print(conv_level + str(sender_id))
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+2020-01-18 22:28:10,593 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 22:28:10] "POST / HTTP/1.1" 500 -
+2020-01-18 22:29:23,239 - werkzeug._log - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-18 22:29:38,153 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 22:29:38] "POST / HTTP/1.1" 200 -
+2020-01-18 22:29:43,988 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 22:29:43] "POST / HTTP/1.1" 200 -
+2020-01-18 22:29:51,187 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 22:29:51] "POST / HTTP/1.1" 200 -
+2020-01-18 22:30:53,746 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 22:30:53] "POST / HTTP/1.1" 200 -
+2020-01-18 22:32:57,351 - werkzeug._log - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-18 22:33:11,367 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 22:33:11] "POST / HTTP/1.1" 200 -
+2020-01-18 22:33:17,131 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 22:33:17] "POST / HTTP/1.1" 200 -
+2020-01-18 22:33:21,729 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 22:33:21] "POST / HTTP/1.1" 200 -
+2020-01-18 22:34:17,063 - werkzeug._log - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-18 22:34:39,042 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 22:34:39] "POST / HTTP/1.1" 200 -
+2020-01-18 22:34:44,003 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 22:34:44] "POST / HTTP/1.1" 200 -
+2020-01-18 22:34:46,973 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 22:34:46] "POST / HTTP/1.1" 200 -
+2020-01-18 22:35:41,167 - werkzeug._log - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-18 22:43:07,637 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 22:43:07] "POST / HTTP/1.1" 200 -
+2020-01-18 22:44:01,094 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 22:44:01] "POST / HTTP/1.1" 200 -
+2020-01-18 22:44:01,590 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 22:44:01] "POST / HTTP/1.1" 200 -
+2020-01-18 22:44:02,100 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 22:44:02] "POST / HTTP/1.1" 200 -
+2020-01-18 22:44:02,601 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 22:44:02] "POST / HTTP/1.1" 200 -
+2020-01-18 22:44:03,092 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 22:44:03] "POST / HTTP/1.1" 200 -
+2020-01-18 22:44:03,578 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 22:44:03] "POST / HTTP/1.1" 200 -
+2020-01-18 22:44:04,222 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 22:44:04] "POST / HTTP/1.1" 200 -
+2020-01-18 22:44:04,728 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 22:44:04] "POST / HTTP/1.1" 200 -
+2020-01-18 22:44:05,303 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 22:44:05] "POST / HTTP/1.1" 200 -
+2020-01-18 22:44:05,907 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 22:44:05] "POST / HTTP/1.1" 200 -
+2020-01-18 22:44:06,416 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 22:44:06] "POST / HTTP/1.1" 200 -
+2020-01-18 22:44:06,872 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 22:44:06] "POST / HTTP/1.1" 200 -
+2020-01-18 22:44:07,415 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 22:44:07] "POST / HTTP/1.1" 200 -
+2020-01-18 22:44:07,898 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 22:44:07] "POST / HTTP/1.1" 200 -
+2020-01-18 22:45:01,741 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 22:45:01] "POST / HTTP/1.1" 200 -
+2020-01-18 22:45:07,848 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 22:45:07] "POST / HTTP/1.1" 200 -
+2020-01-18 22:45:09,968 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 22:45:09] "POST / HTTP/1.1" 200 -
+2020-01-18 22:45:14,290 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 22:45:14] "POST / HTTP/1.1" 200 -
+2020-01-18 22:45:35,109 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 22:45:35] "POST / HTTP/1.1" 200 -
+2020-01-18 22:46:03,350 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 22:46:03] "POST / HTTP/1.1" 200 -
+2020-01-18 22:46:34,050 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 22:46:34] "POST / HTTP/1.1" 200 -
+2020-01-18 22:51:34,462 - werkzeug._log - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-18 22:51:51,136 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 22:51:51] "POST / HTTP/1.1" 200 -
+2020-01-18 22:51:53,773 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 22:51:53] "POST / HTTP/1.1" 200 -
+2020-01-18 22:52:00,179 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 22:52:00] "POST / HTTP/1.1" 200 -
+2020-01-18 22:52:03,175 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 22:52:03] "POST / HTTP/1.1" 200 -
+2020-01-18 22:52:05,044 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 22:52:05] "POST / HTTP/1.1" 200 -
+2020-01-18 22:52:10,787 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 22:52:10] "POST / HTTP/1.1" 200 -
+2020-01-18 22:52:18,967 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 22:52:18] "POST / HTTP/1.1" 200 -
+2020-01-18 22:57:02,656 - werkzeug._log - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-18 22:57:18,814 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 22:57:18] "POST / HTTP/1.1" 200 -
+2020-01-18 22:57:22,592 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 22:57:22] "POST / HTTP/1.1" 200 -
+2020-01-18 22:57:25,197 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 22:57:25] "POST / HTTP/1.1" 200 -
+2020-01-18 22:57:27,825 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 22:57:27] "POST / HTTP/1.1" 200 -
+2020-01-18 22:57:36,751 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "test_app.py", line 146, in receiveMessage
+    conversationHandler(message)
+  File "test_app.py", line 117, in conversationHandler
+    print(message['attachments'][0] + str(sender_id))
+KeyError: 'attachments'
+2020-01-18 22:57:36,753 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 22:57:36] "POST / HTTP/1.1" 500 -
+2020-01-18 22:57:36,964 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "test_app.py", line 146, in receiveMessage
+    conversationHandler(message)
+  File "test_app.py", line 117, in conversationHandler
+    print(message['attachments'][0] + str(sender_id))
+KeyError: 'attachments'
+2020-01-18 22:57:36,964 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 22:57:36] "POST / HTTP/1.1" 500 -
+2020-01-18 22:57:37,449 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "test_app.py", line 146, in receiveMessage
+    conversationHandler(message)
+  File "test_app.py", line 117, in conversationHandler
+    print(message['attachments'][0] + str(sender_id))
+KeyError: 'attachments'
+2020-01-18 22:57:37,449 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 22:57:37] "POST / HTTP/1.1" 500 -
+2020-01-18 22:57:37,655 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "test_app.py", line 146, in receiveMessage
+    conversationHandler(message)
+  File "test_app.py", line 117, in conversationHandler
+    print(message['attachments'][0] + str(sender_id))
+KeyError: 'attachments'
+2020-01-18 22:57:37,660 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 22:57:37] "POST / HTTP/1.1" 500 -
+2020-01-18 22:57:38,258 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "test_app.py", line 146, in receiveMessage
+    conversationHandler(message)
+  File "test_app.py", line 117, in conversationHandler
+    print(message['attachments'][0] + str(sender_id))
+KeyError: 'attachments'
+2020-01-18 22:57:38,259 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 22:57:38] "POST / HTTP/1.1" 500 -
+2020-01-18 22:57:38,467 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "test_app.py", line 146, in receiveMessage
+    conversationHandler(message)
+  File "test_app.py", line 117, in conversationHandler
+    print(message['attachments'][0] + str(sender_id))
+KeyError: 'attachments'
+2020-01-18 22:57:38,468 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 22:57:38] "POST / HTTP/1.1" 500 -
+2020-01-18 22:57:39,862 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "test_app.py", line 146, in receiveMessage
+    conversationHandler(message)
+  File "test_app.py", line 117, in conversationHandler
+    print(message['attachments'][0] + str(sender_id))
+KeyError: 'attachments'
+2020-01-18 22:57:39,863 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 22:57:39] "POST / HTTP/1.1" 500 -
+2020-01-18 22:57:40,081 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "test_app.py", line 146, in receiveMessage
+    conversationHandler(message)
+  File "test_app.py", line 117, in conversationHandler
+    print(message['attachments'][0] + str(sender_id))
+KeyError: 'attachments'
+2020-01-18 22:57:40,083 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 22:57:40] "POST / HTTP/1.1" 500 -
+2020-01-18 22:58:06,697 - werkzeug._log - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-18 22:58:18,734 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 22:58:18] "POST / HTTP/1.1" 200 -
+2020-01-18 22:58:23,027 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 22:58:23] "POST / HTTP/1.1" 200 -
+2020-01-18 22:58:25,996 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 22:58:25] "POST / HTTP/1.1" 200 -
+2020-01-18 22:59:29,041 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "test_app.py", line 146, in receiveMessage
+    conversationHandler(message)
+  File "test_app.py", line 117, in conversationHandler
+    print(message['message']['attachments'][0] + str(sender_id))
+TypeError: unsupported operand type(s) for +: 'dict' and 'str'
+2020-01-18 22:59:29,048 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 22:59:29] "POST / HTTP/1.1" 500 -
+2020-01-18 22:59:29,254 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "test_app.py", line 146, in receiveMessage
+    conversationHandler(message)
+  File "test_app.py", line 117, in conversationHandler
+    print(message['message']['attachments'][0] + str(sender_id))
+TypeError: unsupported operand type(s) for +: 'dict' and 'str'
+2020-01-18 22:59:29,254 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 22:59:29] "POST / HTTP/1.1" 500 -
+2020-01-18 23:16:39,793 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "test_app.py", line 146, in receiveMessage
+    conversationHandler(message)
+  File "test_app.py", line 117, in conversationHandler
+    print(message['message']['attachments'][0] + str(sender_id))
+TypeError: unsupported operand type(s) for +: 'dict' and 'str'
+2020-01-18 23:16:39,794 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 23:16:39] "POST / HTTP/1.1" 500 -
+2020-01-18 23:16:40,010 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "test_app.py", line 146, in receiveMessage
+    conversationHandler(message)
+  File "test_app.py", line 117, in conversationHandler
+    print(message['message']['attachments'][0] + str(sender_id))
+TypeError: unsupported operand type(s) for +: 'dict' and 'str'
+2020-01-18 23:16:40,010 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 23:16:40] "POST / HTTP/1.1" 500 -
+2020-01-18 23:32:30,589 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "test_app.py", line 146, in receiveMessage
+    conversationHandler(message)
+  File "test_app.py", line 117, in conversationHandler
+    print(message['message']['attachments'][0] + str(sender_id))
+TypeError: unsupported operand type(s) for +: 'dict' and 'str'
+2020-01-18 23:32:30,591 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 23:32:30] "POST / HTTP/1.1" 500 -
+2020-01-18 23:32:30,793 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "test_app.py", line 146, in receiveMessage
+    conversationHandler(message)
+  File "test_app.py", line 117, in conversationHandler
+    print(message['message']['attachments'][0] + str(sender_id))
+TypeError: unsupported operand type(s) for +: 'dict' and 'str'
+2020-01-18 23:32:30,794 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 23:32:30] "POST / HTTP/1.1" 500 -
+2020-01-18 23:50:11,352 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "test_app.py", line 146, in receiveMessage
+    conversationHandler(message)
+  File "test_app.py", line 117, in conversationHandler
+    print(message['message']['attachments'][0] + str(sender_id))
+TypeError: unsupported operand type(s) for +: 'dict' and 'str'
+2020-01-18 23:50:11,354 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 23:50:11] "POST / HTTP/1.1" 500 -
+2020-01-18 23:50:11,558 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "test_app.py", line 146, in receiveMessage
+    conversationHandler(message)
+  File "test_app.py", line 117, in conversationHandler
+    print(message['message']['attachments'][0] + str(sender_id))
+TypeError: unsupported operand type(s) for +: 'dict' and 'str'
+2020-01-18 23:50:11,559 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 23:50:11] "POST / HTTP/1.1" 500 -
+2020-01-18 23:53:59,627 - werkzeug._log - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-18 23:54:12,329 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 23:54:12] "POST / HTTP/1.1" 200 -
+2020-01-18 23:54:15,918 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 23:54:15] "POST / HTTP/1.1" 200 -
+2020-01-18 23:54:19,747 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 23:54:19] "POST / HTTP/1.1" 200 -
+2020-01-18 23:54:46,472 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "test_app.py", line 118, in receiveMessage
+    conversationHandler(message)
+  File "test_app.py", line 98, in conversationHandler
+    conv_level_callbacks[conv_level](sender_id)
+KeyError: 2
+2020-01-18 23:54:46,473 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 23:54:46] "POST / HTTP/1.1" 500 -
+2020-01-18 23:54:46,937 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "test_app.py", line 118, in receiveMessage
+    conversationHandler(message)
+  File "test_app.py", line 98, in conversationHandler
+    conv_level_callbacks[conv_level](sender_id)
+KeyError: 2
+2020-01-18 23:54:46,938 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 23:54:46] "POST / HTTP/1.1" 500 -
+2020-01-18 23:54:47,808 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "test_app.py", line 118, in receiveMessage
+    conversationHandler(message)
+  File "test_app.py", line 98, in conversationHandler
+    conv_level_callbacks[conv_level](sender_id)
+KeyError: 2
+2020-01-18 23:54:47,809 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 23:54:47] "POST / HTTP/1.1" 500 -
+2020-01-18 23:54:48,277 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "test_app.py", line 118, in receiveMessage
+    conversationHandler(message)
+  File "test_app.py", line 98, in conversationHandler
+    conv_level_callbacks[conv_level](sender_id)
+KeyError: 2
+2020-01-18 23:54:48,277 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 23:54:48] "POST / HTTP/1.1" 500 -
+2020-01-18 23:54:49,318 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "test_app.py", line 118, in receiveMessage
+    conversationHandler(message)
+  File "test_app.py", line 98, in conversationHandler
+    conv_level_callbacks[conv_level](sender_id)
+KeyError: 2
+2020-01-18 23:54:49,319 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 23:54:49] "POST / HTTP/1.1" 500 -
+2020-01-18 23:54:49,789 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "test_app.py", line 118, in receiveMessage
+    conversationHandler(message)
+  File "test_app.py", line 98, in conversationHandler
+    conv_level_callbacks[conv_level](sender_id)
+KeyError: 2
+2020-01-18 23:54:49,789 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 23:54:49] "POST / HTTP/1.1" 500 -
+2020-01-18 23:54:50,828 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "test_app.py", line 118, in receiveMessage
+    conversationHandler(message)
+  File "test_app.py", line 98, in conversationHandler
+    conv_level_callbacks[conv_level](sender_id)
+KeyError: 2
+2020-01-18 23:54:50,829 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 23:54:50] "POST / HTTP/1.1" 500 -
+2020-01-18 23:54:51,304 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "test_app.py", line 118, in receiveMessage
+    conversationHandler(message)
+  File "test_app.py", line 98, in conversationHandler
+    conv_level_callbacks[conv_level](sender_id)
+KeyError: 2
+2020-01-18 23:54:51,304 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 23:54:51] "POST / HTTP/1.1" 500 -
+2020-01-18 23:55:36,406 - werkzeug._log - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-18 23:55:47,868 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 23:55:47] "POST / HTTP/1.1" 200 -
+2020-01-18 23:55:51,081 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 23:55:51] "POST / HTTP/1.1" 200 -
+2020-01-18 23:56:00,657 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 23:56:00] "POST / HTTP/1.1" 200 -
+2020-01-18 23:56:10,490 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 23:56:10] "POST / HTTP/1.1" 200 -
+2020-01-18 23:56:14,376 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 23:56:14] "POST / HTTP/1.1" 200 -
+2020-01-18 23:56:16,695 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 23:56:16] "POST / HTTP/1.1" 200 -
+2020-01-18 23:56:20,043 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 23:56:20] "POST / HTTP/1.1" 200 -
+2020-01-18 23:56:23,045 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 23:56:23] "POST / HTTP/1.1" 200 -
+2020-01-18 23:57:43,666 - werkzeug._log - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-18 23:57:59,621 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 23:57:59] "POST / HTTP/1.1" 200 -
+2020-01-19 00:00:35,126 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:00:35] "POST / HTTP/1.1" 200 -
+2020-01-19 00:00:58,646 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:00:58] "POST / HTTP/1.1" 200 -
+2020-01-19 00:03:02,367 - werkzeug._log - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-19 00:03:11,752 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:03:11] "POST / HTTP/1.1" 200 -
+2020-01-19 00:03:20,326 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:03:20] "POST / HTTP/1.1" 200 -
+2020-01-19 00:04:53,296 - werkzeug._log - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-19 00:04:53,298 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-19 00:04:53,565 - werkzeug._log - WARNING -  * Debugger is active!
+2020-01-19 00:04:53,611 - werkzeug._log - INFO -  * Debugger PIN: 468-200-002
+2020-01-19 00:05:02,337 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:05:02] "POST / HTTP/1.1" 200 -
+2020-01-19 00:05:22,037 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:05:22] "POST / HTTP/1.1" 200 -
+2020-01-19 00:05:22,568 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:05:22] "POST / HTTP/1.1" 200 -
+2020-01-19 00:05:23,017 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:05:23] "POST / HTTP/1.1" 200 -
+2020-01-19 00:05:23,523 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:05:23] "POST / HTTP/1.1" 200 -
+2020-01-19 00:05:24,025 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:05:24] "POST / HTTP/1.1" 200 -
+2020-01-19 00:05:24,625 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:05:24] "POST / HTTP/1.1" 200 -
+2020-01-19 00:05:25,156 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:05:25] "POST / HTTP/1.1" 200 -
+2020-01-19 00:05:25,652 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:05:25] "POST / HTTP/1.1" 200 -
+2020-01-19 00:05:26,272 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:05:26] "POST / HTTP/1.1" 200 -
+2020-01-19 00:05:26,762 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:05:26] "POST / HTTP/1.1" 200 -
+2020-01-19 00:05:27,242 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:05:27] "POST / HTTP/1.1" 200 -
+2020-01-19 00:05:27,777 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:05:27] "POST / HTTP/1.1" 200 -
+2020-01-19 00:05:28,254 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:05:28] "POST / HTTP/1.1" 200 -
+2020-01-19 00:05:28,900 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:05:28] "POST / HTTP/1.1" 200 -
+2020-01-19 00:05:29,425 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:05:29] "POST / HTTP/1.1" 200 -
+2020-01-19 00:05:30,096 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:05:30] "POST / HTTP/1.1" 200 -
+2020-01-19 00:05:30,625 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:05:30] "POST / HTTP/1.1" 200 -
+2020-01-19 00:05:31,095 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:05:31] "POST / HTTP/1.1" 200 -
+2020-01-19 00:06:04,182 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:06:04] "POST / HTTP/1.1" 200 -
+2020-01-19 00:06:09,055 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:06:09] "POST / HTTP/1.1" 200 -
+2020-01-19 00:06:11,575 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:06:11] "POST / HTTP/1.1" 200 -
+2020-01-19 00:06:14,346 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:06:14] "POST / HTTP/1.1" 200 -
+2020-01-19 00:06:16,665 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:06:16] "POST / HTTP/1.1" 200 -
+2020-01-19 00:06:18,985 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:06:18] "POST / HTTP/1.1" 200 -
+2020-01-19 00:06:21,423 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:06:21] "POST / HTTP/1.1" 200 -
+2020-01-19 00:06:23,579 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:06:23] "POST / HTTP/1.1" 200 -
+2020-01-19 00:06:54,850 - werkzeug._log - INFO -  * Detected change in '/Users/smorty/42/python/fbbot/test_app.py', reloading
+2020-01-19 00:06:54,893 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-19 00:06:55,133 - werkzeug._log - WARNING -  * Debugger is active!
+2020-01-19 00:06:55,139 - werkzeug._log - INFO -  * Debugger PIN: 468-200-002
+2020-01-19 00:07:11,064 - werkzeug._log - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-19 00:07:11,065 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-19 00:07:11,305 - werkzeug._log - WARNING -  * Debugger is active!
+2020-01-19 00:07:11,344 - werkzeug._log - INFO -  * Debugger PIN: 468-200-002
+2020-01-19 00:07:19,865 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:07:19] "POST / HTTP/1.1" 200 -
+2020-01-19 00:07:32,408 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:07:32] "POST / HTTP/1.1" 200 -
+2020-01-19 00:07:50,727 - werkzeug._log - INFO -  * Detected change in '/Users/smorty/42/python/fbbot/test_app.py', reloading
+2020-01-19 00:07:50,760 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-19 00:07:50,979 - werkzeug._log - WARNING -  * Debugger is active!
+2020-01-19 00:07:50,985 - werkzeug._log - INFO -  * Debugger PIN: 468-200-002
+2020-01-19 00:08:00,988 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:08:00] "POST / HTTP/1.1" 200 -
+2020-01-19 00:08:19,329 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:08:19] "POST / HTTP/1.1" 200 -
+2020-01-19 00:08:19,799 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:08:19] "POST / HTTP/1.1" 200 -
+2020-01-19 00:08:20,321 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:08:20] "POST / HTTP/1.1" 200 -
+2020-01-19 00:08:20,830 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:08:20] "POST / HTTP/1.1" 200 -
+2020-01-19 00:08:21,349 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:08:21] "POST / HTTP/1.1" 200 -
+2020-01-19 00:08:21,828 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:08:21] "POST / HTTP/1.1" 200 -
+2020-01-19 00:08:29,580 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:08:29] "POST / HTTP/1.1" 200 -
+2020-01-19 00:08:30,952 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:08:30] "POST / HTTP/1.1" 200 -
+2020-01-19 00:08:41,834 - werkzeug._log - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-19 00:08:41,835 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-19 00:08:42,053 - werkzeug._log - WARNING -  * Debugger is active!
+2020-01-19 00:08:42,059 - werkzeug._log - INFO -  * Debugger PIN: 468-200-002
+2020-01-19 00:08:47,140 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:08:47] "POST / HTTP/1.1" 200 -
+2020-01-19 00:09:02,618 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:09:02] "POST / HTTP/1.1" 200 -
+2020-01-19 00:09:05,977 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:09:05] "POST / HTTP/1.1" 200 -
+2020-01-19 00:09:08,353 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:09:08] "POST / HTTP/1.1" 200 -
+2020-01-19 00:09:14,932 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:09:14] "POST / HTTP/1.1" 200 -
+2020-01-19 00:09:17,453 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:09:17] "POST / HTTP/1.1" 200 -
+2020-01-19 00:09:19,522 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:09:19] "POST / HTTP/1.1" 200 -
+2020-01-19 00:09:22,315 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:09:22] "POST / HTTP/1.1" 200 -
+2020-01-19 00:09:24,404 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:09:24] "POST / HTTP/1.1" 200 -
+2020-01-19 00:09:26,713 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:09:26] "POST / HTTP/1.1" 200 -
+2020-01-19 00:09:28,841 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:09:28] "POST / HTTP/1.1" 200 -
+2020-01-19 00:09:31,140 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:09:31] "POST / HTTP/1.1" 200 -
+2020-01-19 00:09:32,617 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:09:32] "POST / HTTP/1.1" 500 -
+2020-01-19 00:09:32,842 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:09:32] "POST / HTTP/1.1" 500 -
+2020-01-19 00:09:33,307 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:09:33] "POST / HTTP/1.1" 500 -
+2020-01-19 00:09:33,536 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:09:33] "POST / HTTP/1.1" 500 -
+2020-01-19 00:09:34,244 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:09:34] "POST / HTTP/1.1" 500 -
+2020-01-19 00:09:34,482 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:09:34] "POST / HTTP/1.1" 500 -
+2020-01-19 00:09:35,967 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:09:35] "POST / HTTP/1.1" 500 -
+2020-01-19 00:09:36,197 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:09:36] "POST / HTTP/1.1" 500 -
+2020-01-19 00:09:47,132 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:09:47] "POST / HTTP/1.1" 500 -
+2020-01-19 00:09:47,363 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:09:47] "POST / HTTP/1.1" 500 -
+2020-01-19 00:10:10,938 - werkzeug._log - INFO -  * Detected change in '/Users/smorty/42/python/fbbot/test_app.py', reloading
+2020-01-19 00:10:10,987 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-19 00:10:11,213 - werkzeug._log - WARNING -  * Debugger is active!
+2020-01-19 00:10:11,219 - werkzeug._log - INFO -  * Debugger PIN: 468-200-002
+2020-01-19 00:10:30,092 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:10:30] "POST / HTTP/1.1" 200 -
+2020-01-19 00:10:35,182 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:10:35] "POST / HTTP/1.1" 200 -
+2020-01-19 00:10:44,891 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:10:44] "POST / HTTP/1.1" 200 -
+2020-01-19 00:11:30,322 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:11:30] "POST / HTTP/1.1" 200 -
+2020-01-19 00:11:31,264 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:11:31] "POST / HTTP/1.1" 200 -
+2020-01-19 00:11:32,141 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:11:32] "POST / HTTP/1.1" 200 -
+2020-01-19 00:11:33,296 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:11:33] "POST / HTTP/1.1" 200 -
+2020-01-19 00:11:34,431 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:11:34] "POST / HTTP/1.1" 200 -
+2020-01-19 00:11:48,183 - werkzeug._log - INFO -  * Detected change in '/Users/smorty/42/python/fbbot/test_app.py', reloading
+2020-01-19 00:11:48,219 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-19 00:11:48,457 - werkzeug._log - WARNING -  * Debugger is active!
+2020-01-19 00:11:48,464 - werkzeug._log - INFO -  * Debugger PIN: 468-200-002
+2020-01-19 00:12:23,805 - werkzeug._log - INFO -  * Detected change in '/Users/smorty/42/python/fbbot/test_app.py', reloading
+2020-01-19 00:12:23,845 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-19 00:12:24,087 - werkzeug._log - WARNING -  * Debugger is active!
+2020-01-19 00:12:24,093 - werkzeug._log - INFO -  * Debugger PIN: 468-200-002
+2020-01-19 00:13:41,842 - werkzeug._log - INFO -  * Detected change in '/Users/smorty/42/python/fbbot/test_app.py', reloading
+2020-01-19 00:13:41,880 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-19 00:13:42,117 - werkzeug._log - WARNING -  * Debugger is active!
+2020-01-19 00:13:42,124 - werkzeug._log - INFO -  * Debugger PIN: 468-200-002
+2020-01-19 00:14:00,312 - werkzeug._log - INFO -  * Detected change in '/Users/smorty/42/python/fbbot/test_app.py', reloading
+2020-01-19 00:14:00,347 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-19 00:14:00,571 - werkzeug._log - WARNING -  * Debugger is active!
+2020-01-19 00:14:00,578 - werkzeug._log - INFO -  * Debugger PIN: 468-200-002
+2020-01-19 00:14:35,939 - werkzeug._log - INFO -  * Detected change in '/Users/smorty/42/python/fbbot/test_app.py', reloading
+2020-01-19 00:14:35,972 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-19 00:14:36,189 - werkzeug._log - WARNING -  * Debugger is active!
+2020-01-19 00:14:36,195 - werkzeug._log - INFO -  * Debugger PIN: 468-200-002
+2020-01-19 00:14:54,383 - werkzeug._log - INFO -  * Detected change in '/Users/smorty/42/python/fbbot/test_app.py', reloading
+2020-01-19 00:14:54,417 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-19 00:14:54,650 - werkzeug._log - WARNING -  * Debugger is active!
+2020-01-19 00:14:54,656 - werkzeug._log - INFO -  * Debugger PIN: 468-200-002
+2020-01-19 00:15:19,896 - werkzeug._log - INFO -  * Detected change in '/Users/smorty/42/python/fbbot/test_app.py', reloading
+2020-01-19 00:15:19,931 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-19 00:15:20,146 - werkzeug._log - WARNING -  * Debugger is active!
+2020-01-19 00:15:20,152 - werkzeug._log - INFO -  * Debugger PIN: 468-200-002
+2020-01-19 00:16:30,852 - werkzeug._log - INFO -  * Detected change in '/Users/smorty/42/python/fbbot/test_app.py', reloading
+2020-01-19 00:16:30,894 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-19 00:16:31,135 - werkzeug._log - WARNING -  * Debugger is active!
+2020-01-19 00:16:31,141 - werkzeug._log - INFO -  * Debugger PIN: 468-200-002
+2020-01-19 00:16:39,564 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:16:39] "POST / HTTP/1.1" 200 -
+2020-01-19 00:16:52,262 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:16:52] "POST / HTTP/1.1" 200 -
+2020-01-19 00:16:56,522 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:16:56] "POST / HTTP/1.1" 200 -
+2020-01-19 00:16:59,821 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:16:59] "POST / HTTP/1.1" 200 -
+2020-01-19 00:17:02,866 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:17:02] "POST / HTTP/1.1" 200 -
+2020-01-19 00:17:12,756 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:17:12] "POST / HTTP/1.1" 200 -
+2020-01-19 00:17:23,661 - werkzeug._log - INFO -  * Detected change in '/Users/smorty/42/python/fbbot/test_app.py', reloading
+2020-01-19 00:17:23,696 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-19 00:17:23,920 - werkzeug._log - WARNING -  * Debugger is active!
+2020-01-19 00:17:23,926 - werkzeug._log - INFO -  * Debugger PIN: 468-200-002
+2020-01-19 00:19:02,892 - werkzeug._log - INFO -  * Detected change in '/Users/smorty/42/python/fbbot/test_app.py', reloading
+2020-01-19 00:19:02,932 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-19 00:24:07,273 - werkzeug._log - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-19 00:24:07,275 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-19 00:24:07,495 - werkzeug._log - WARNING -  * Debugger is active!
+2020-01-19 00:24:07,501 - werkzeug._log - INFO -  * Debugger PIN: 468-200-002
+2020-01-19 00:24:21,544 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:24:21] "POST / HTTP/1.1" 200 -
+2020-01-19 00:24:25,372 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:24:25] "POST / HTTP/1.1" 200 -
+2020-01-19 00:24:28,498 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:24:28] "POST / HTTP/1.1" 200 -
+2020-01-19 00:24:31,744 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:24:31] "POST / HTTP/1.1" 200 -
+2020-01-19 00:24:34,733 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:24:34] "POST / HTTP/1.1" 200 -
+2020-01-19 00:24:46,909 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:24:46] "POST / HTTP/1.1" 500 -
+2020-01-19 00:24:47,121 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:24:47] "POST / HTTP/1.1" 500 -
+2020-01-19 00:24:47,782 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:24:47] "POST / HTTP/1.1" 500 -
+2020-01-19 00:24:48,014 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:24:48] "POST / HTTP/1.1" 500 -
+2020-01-19 00:24:48,736 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:24:48] "POST / HTTP/1.1" 500 -
+2020-01-19 00:24:48,958 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:24:48] "POST / HTTP/1.1" 500 -
+2020-01-19 00:24:50,533 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:24:50] "POST / HTTP/1.1" 500 -
+2020-01-19 00:24:50,745 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:24:50] "POST / HTTP/1.1" 500 -
+2020-01-19 00:25:16,791 - werkzeug._log - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-19 00:25:16,793 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-19 00:25:17,034 - werkzeug._log - WARNING -  * Debugger is active!
+2020-01-19 00:25:17,063 - werkzeug._log - INFO -  * Debugger PIN: 468-200-002
+2020-01-19 00:25:32,936 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:25:32] "POST / HTTP/1.1" 200 -
+2020-01-19 00:25:36,668 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:25:36] "POST / HTTP/1.1" 200 -
+2020-01-19 00:25:41,972 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:25:41] "POST / HTTP/1.1" 200 -
+2020-01-19 00:25:59,329 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:25:59] "POST / HTTP/1.1" 200 -
+2020-01-19 00:26:38,829 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:26:38] "POST / HTTP/1.1" 200 -
+2020-01-19 00:26:39,735 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:26:39] "POST / HTTP/1.1" 200 -
+2020-01-19 00:26:40,645 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:26:40] "POST / HTTP/1.1" 200 -
+2020-01-19 00:26:41,767 - werkzeug._log - INFO - 127.0.0.1 - - [19/Jan/2020 00:26:41] "POST / HTTP/1.1" 200 -
+2020-01-19 00:32:50,518 - werkzeug._log - INFO -  * Detected change in '/Users/smorty/42/python/fbbot/test_app.py', reloading
+2020-01-19 00:32:50,557 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-19 00:32:51,111 - werkzeug._log - WARNING -  * Debugger is active!
+2020-01-19 00:32:51,118 - werkzeug._log - INFO -  * Debugger PIN: 468-200-002
+2020-01-19 00:38:25,463 - werkzeug._log - INFO -  * Detected change in '/Users/smorty/42/python/fbbot/test_app.py', reloading
+2020-01-19 00:38:25,501 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-19 00:40:41,039 - werkzeug._log - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-19 00:40:41,041 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-19 00:40:41,259 - werkzeug._log - WARNING -  * Debugger is active!
+2020-01-19 00:40:41,274 - werkzeug._log - INFO -  * Debugger PIN: 468-200-002
+2020-01-19 00:41:06,538 - werkzeug._log - INFO -  * Detected change in '/Users/smorty/42/python/fbbot/test_app.py', reloading
+2020-01-19 00:41:06,576 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-19 00:41:07,025 - werkzeug._log - WARNING -  * Debugger is active!
+2020-01-19 00:41:07,045 - werkzeug._log - INFO -  * Debugger PIN: 468-200-002
+2020-01-19 00:42:28,859 - werkzeug._log - INFO -  * Detected change in '/Users/smorty/42/python/fbbot/test_app.py', reloading
+2020-01-19 00:42:28,897 - werkzeug._log - INFO -  * Restarting with stat

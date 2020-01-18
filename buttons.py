@@ -3,7 +3,7 @@ import messages as msg
 language = [
 	{
 		"type"		: "postback",
-		"title"		: lang,
+		"title"		: msg.pick_language[lang],
 		"payload"	: lang
 	}
 	for lang in msg.languages

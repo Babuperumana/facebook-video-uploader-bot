@@ -13,106 +13,159 @@ import config as conf
 app = Flask(__name__)
 bot = Bot(conf.access_token)
 
-lang = 'ru'
-
 (LANG, GREETINGS, HOTEL, DATE, ROOM, STAY, CONFIRM,
 	VIDEO, USERNAME, PHONE, AVATAR, FINISH) = range(12)
-
-def makeTmpButtons():
-	for i in range(100):
-		button = [{
-			"type"		: "postback",
-			"title"		: "Next",
-			"payload"	: "/next{}".format(i)
-		}]
-		yield button
-
-btn_generator = makeTmpButtons()
-
-#поиграл с генератором кнопок
 
 user_data = {}
 
 ####################################
 
-def error(recipient_id):
-	bot.send_text_message(recipient_id, msg.error_msg[lang])
+def error(sender_id, message=None):
+	bot.send_text_message(
+		sender_id,
+		msg.error_msg[user_data[sender_id]['lang']]
+	)
 
-def askLanguage(recipient_id):
-	bot.send_button_message(recipient_id, msg.ask_language, next(btn_generator))
-	user_data[recipient_id]['conv_level'] = LANG
+def askLanguage(sender_id, message=None):
+	bot.send_button_message(
+		sender_id,
+		msg.ask_language,
+		btn.language
+	)
+	user_data[sender_id]['conv_level'] = LANG
 
-def greetings(recipient_id):
-	bot.send_text_message(recipient_id, msg.greetings[lang])
-	bot.send_button_message(recipient_id, msg.starting[lang], next(btn_generator))
-	user_data[recipient_id]['conv_level'] = GREETINGS
+def getLanguage(sender_id, message):
+	try:
+		lang = message['postback']['payload']
+		if lang in msg.languages:
+			user_data[sender_id]['lang'] = lang
+			return greetings(sender_id)
+	except KeyError:
+		pass
+	return askLanguage(sender_id)
 
-def askHotel(recipient_id):
-	bot.send_button_message(recipient_id, msg.ask_hotel[lang], next(btn_generator))
-	user_data[recipient_id]['conv_level'] = HOTEL
+def greetings(sender_id, message=None):
+	bot.send_text_message(
+		sender_id,
+		msg.greetings[user_data[sender_id]['lang']]
+	)
+	bot.send_button_message(
+		sender_id,
+		msg.starting[user_data[sender_id]['lang']],
+		[ btn.add_hotel_button[user_data[sender_id]['lang']]]
+	)
+	user_data[sender_id]['conv_level'] = GREETINGS
 
-def askDate(recipient_id):
-	bot.send_button_message(recipient_id, msg.ask_date[lang], next(btn_generator))
-	user_data[recipient_id]['conv_level'] = DATE
+def askHotel(sender_id, message=None):
+	bot.send_text_message(
+		sender_id,
+		msg.ask_hotel[user_data[sender_id]['lang']]
+	)
+	user_data[sender_id]['conv_level'] = HOTEL
 
-def askRoomType(recipient_id):
-	bot.send_button_message(recipient_id, msg.ask_room_type[lang], next(btn_generator))
-	user_data[recipient_id]['conv_level'] = ROOM
+def getHotel(sender_id, message=None):
+	try:
+		url = message['message']['attachments'][0]['url']
+		# parse url
+		return askDate(sender_id)
+	except KeyError:
+		return askHotel(sender_id)
 
-def askStayType(recipient_id):
-	bot.send_button_message(recipient_id, msg.ask_stay_type[lang], next(btn_generator))
-	user_data[recipient_id]['conv_level'] = STAY
+def askDate(sender_id, message=None):
+	bot.send_text_message(
+		sender_id,
+		msg.ask_date[user_data[sender_id]['lang']]
+	)
+	user_data[sender_id]['conv_level'] = DATE
 
-def confirm(recipient_id):
-	bot.send_button_message(recipient_id, msg.ask_confirm[lang], next(btn_generator))
-	user_data[recipient_id]['conv_level'] = CONFIRM
+def askRoomType(sender_id, message=None):
+	bot.send_text_message(
+		sender_id,
+		msg.ask_room_type[user_data[sender_id]['lang']]
+	)
+	user_data[sender_id]['conv_level'] = ROOM
 
-def askVideo(recipient_id):
-	bot.send_button_message(recipient_id, msg.ask_video[lang], next(btn_generator))
-	user_data[recipient_id]['conv_level'] = VIDEO
+def askStayType(sender_id, message=None):
+	bot.send_text_message(
+		sender_id,
+		msg.ask_stay_type[user_data[sender_id]['lang']]
+	)
+	user_data[sender_id]['conv_level'] = STAY
 
-def askUsername(recipient_id):
-	bot.send_button_message(recipient_id, msg.ask_username[lang], next(btn_generator))
-	user_data[recipient_id]['conv_level'] = USERNAME
+def confirm(sender_id, message=None):
+	bot.send_button_message(
+		sender_id,
+		msg.ask_confirm[user_data[sender_id]['lang']],
+		[ btn.confirm_button[user_data[sender_id]['lang']] ]
+	)
+	user_data[sender_id]['conv_level'] = CONFIRM
 
-def askPhone(recipient_id):
-	bot.send_button_message(recipient_id, msg.ask_phone[lang], next(btn_generator))
-	user_data[recipient_id]['conv_level'] = PHONE
+def askVideo(sender_id, message=None):
+	bot.send_text_message(
+		sender_id,
+		msg.ask_video[user_data[sender_id]['lang']]
+	)
+	user_data[sender_id]['conv_level'] = VIDEO
 
-def askAvatar(recipient_id):
-	bot.send_button_message(recipient_id, msg.ask_avatar[lang], next(btn_generator))
-	user_data[recipient_id]['conv_level'] = AVATAR
+def askUsername(sender_id, message=None):
+	bot.send_text_message(
+		sender_id,
+		msg.ask_username[user_data[sender_id]['lang']]
+	)
+	user_data[sender_id]['conv_level'] = USERNAME
 
-def finish(recipient_id):
-	bot.send_text_message(recipient_id, msg.finish[lang])
-	user_data[recipient_id]['conv_level'] = FINISH
+def askPhone(sender_id, message=None):
+	bot.send_text_message(
+		sender_id,
+		msg.ask_phone[user_data[sender_id]['lang']]
+	)
+	user_data[sender_id]['conv_level'] = PHONE
+
+def askAvatar(sender_id, message=None):
+	bot.send_text_message(
+		sender_id,
+		msg.ask_avatar[user_data[sender_id]['lang']]
+	)
+	user_data[sender_id]['conv_level'] = AVATAR
+
+def finish(sender_id, message=None):
+	bot.send_text_message(
+		sender_id,
+		msg.finish[user_data[sender_id]['lang']]
+	)
+	user_data[sender_id]['conv_level'] = FINISH
 
 ####################################
 
-#по пэйлоаду вызываем callback 
-conversation_functions = {
-	'/start'	: askLanguage,
-	'/next0'	: greetings,
-	'/next1'	: askHotel,
-	'/next2'	: askDate,
-	'/next3'	: askRoomType,
-	'/next4'	: askStayType,
-	'/next5'	: confirm,
-	'/next6'	: askVideo,
-	'/next7'	: askUsername,
-	'/next8'	: askPhone,
-	'/next9'	: askAvatar,
-	'/next10'	: finish,
+conv_level_callbacks = {
+	LANG		: getLanguage,
+	GREETINGS	: askHotel,
+	HOTEL		: getHotel,
+	DATE		: askRoomType,
+	ROOM		: askStayType,
+	STAY		: confirm,
+	CONFIRM		: askVideo,
+	VIDEO		: askUsername,
+	USERNAME	: askPhone,
+	PHONE		: askAvatar,
+	AVATAR		: finish,
+	FINISH		: greetings,
 }
 
 def conversationHandler(message):
-	if 'postback' in message:
+	sender_id = message['sender']['id']
+	if not sender_id in user_data:
+		user_data[sender_id] = {}
+
+	#если диалог идёт, вызываем коллбэк следующего уровня диалога
+	if 'conv_level' in user_data[sender_id]:
+		conv_level = user_data[sender_id]['conv_level']
+		conv_level_callbacks[conv_level](sender_id, message)
+	#иначе если в постбэке есть старт, начинаем с вопроса о языке
+	elif 'postback' in message:
 		payload = message['postback']['payload']
-		recipient_id = message['sender']['id']
-		try:
-			conversation_functions[payload](recipient_id)
-		except KeyError:
-			error(recipient_id)
+		if payload == '/start':
+			askLanguage(sender_id)
 
 ####################################
 
@@ -136,4 +189,4 @@ def verifyToken(token_sent):
 	return 'Invalid verification token'
 
 if __name__ == "__main__":
-	app.run()
+	app.run(debug=True)
