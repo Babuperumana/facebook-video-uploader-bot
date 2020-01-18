@@ -1,0 +1,936 @@
+asd2020-01-18 16:13:27,688 - werkzeug._log - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-18 16:24:25,042 - werkzeug._log - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-18 16:25:05,933 - werkzeug._log - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-18 16:27:15,321 - werkzeug._log - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-18 16:29:08,756 - werkzeug._log - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-18 16:29:48,384 - werkzeug._log - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-18 16:30:34,073 - werkzeug._log - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-18 16:30:48,450 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 16:30:48] "GET /?hub.mode=subscribe&hub.challenge=1799022507&hub.verify_token=y7p4mx3rxm HTTP/1.1" 200 -
+2020-01-18 16:32:42,117 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 16:32:42] "POST / HTTP/1.1" 200 -
+2020-01-18 16:33:54,285 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 16:33:54] "POST / HTTP/1.1" 200 -
+2020-01-18 16:33:56,086 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 16:33:56] "POST / HTTP/1.1" 200 -
+2020-01-18 16:33:57,933 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 16:33:57] "POST / HTTP/1.1" 200 -
+2020-01-18 16:34:00,427 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 16:34:00] "POST / HTTP/1.1" 200 -
+2020-01-18 16:35:03,295 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 16:35:03] "POST / HTTP/1.1" 200 -
+2020-01-18 17:16:05,587 - werkzeug._log - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-18 17:16:22,147 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:16:22] "POST / HTTP/1.1" 200 -
+2020-01-18 17:16:29,716 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:16:29] "POST / HTTP/1.1" 200 -
+2020-01-18 17:16:32,545 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:16:32] "POST / HTTP/1.1" 200 -
+2020-01-18 17:16:34,176 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:16:34] "POST / HTTP/1.1" 200 -
+2020-01-18 17:17:28,041 - werkzeug._log - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-18 17:17:48,304 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1967, in finalize_request
+    response = self.make_response(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2097, in make_response
+    "The view function did not return a valid response. The"
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2020-01-18 17:17:48,305 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:17:48] "POST / HTTP/1.1" 500 -
+2020-01-18 17:17:48,780 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1967, in finalize_request
+    response = self.make_response(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2097, in make_response
+    "The view function did not return a valid response. The"
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2020-01-18 17:17:48,781 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:17:48] "POST / HTTP/1.1" 500 -
+2020-01-18 17:17:49,561 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1967, in finalize_request
+    response = self.make_response(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2097, in make_response
+    "The view function did not return a valid response. The"
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2020-01-18 17:17:49,561 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:17:49] "POST / HTTP/1.1" 500 -
+2020-01-18 17:17:49,668 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1967, in finalize_request
+    response = self.make_response(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2097, in make_response
+    "The view function did not return a valid response. The"
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2020-01-18 17:17:49,668 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:17:49] "POST / HTTP/1.1" 500 -
+2020-01-18 17:17:49,778 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1967, in finalize_request
+    response = self.make_response(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2097, in make_response
+    "The view function did not return a valid response. The"
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2020-01-18 17:17:49,779 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:17:49] "POST / HTTP/1.1" 500 -
+2020-01-18 17:17:50,147 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1967, in finalize_request
+    response = self.make_response(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2097, in make_response
+    "The view function did not return a valid response. The"
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2020-01-18 17:17:50,147 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:17:50] "POST / HTTP/1.1" 500 -
+2020-01-18 17:17:50,267 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1967, in finalize_request
+    response = self.make_response(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2097, in make_response
+    "The view function did not return a valid response. The"
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2020-01-18 17:17:50,268 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:17:50] "POST / HTTP/1.1" 500 -
+2020-01-18 17:17:50,473 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1967, in finalize_request
+    response = self.make_response(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2097, in make_response
+    "The view function did not return a valid response. The"
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2020-01-18 17:17:50,474 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:17:50] "POST / HTTP/1.1" 500 -
+2020-01-18 17:17:51,123 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1967, in finalize_request
+    response = self.make_response(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2097, in make_response
+    "The view function did not return a valid response. The"
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2020-01-18 17:17:51,124 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:17:51] "POST / HTTP/1.1" 500 -
+2020-01-18 17:17:51,163 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1967, in finalize_request
+    response = self.make_response(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2097, in make_response
+    "The view function did not return a valid response. The"
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2020-01-18 17:17:51,164 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:17:51] "POST / HTTP/1.1" 500 -
+2020-01-18 17:17:51,338 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1967, in finalize_request
+    response = self.make_response(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2097, in make_response
+    "The view function did not return a valid response. The"
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2020-01-18 17:17:51,339 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:17:51] "POST / HTTP/1.1" 500 -
+2020-01-18 17:17:51,632 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1967, in finalize_request
+    response = self.make_response(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2097, in make_response
+    "The view function did not return a valid response. The"
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2020-01-18 17:17:51,633 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:17:51] "POST / HTTP/1.1" 500 -
+2020-01-18 17:17:52,644 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1967, in finalize_request
+    response = self.make_response(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2097, in make_response
+    "The view function did not return a valid response. The"
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2020-01-18 17:17:52,645 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:17:52] "POST / HTTP/1.1" 500 -
+2020-01-18 17:17:52,806 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1967, in finalize_request
+    response = self.make_response(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2097, in make_response
+    "The view function did not return a valid response. The"
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2020-01-18 17:17:52,807 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:17:52] "POST / HTTP/1.1" 500 -
+2020-01-18 17:17:53,025 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1967, in finalize_request
+    response = self.make_response(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2097, in make_response
+    "The view function did not return a valid response. The"
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2020-01-18 17:17:53,025 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:17:53] "POST / HTTP/1.1" 500 -
+2020-01-18 17:17:53,121 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1967, in finalize_request
+    response = self.make_response(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2097, in make_response
+    "The view function did not return a valid response. The"
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2020-01-18 17:17:53,121 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:17:53] "POST / HTTP/1.1" 500 -
+2020-01-18 17:19:26,984 - werkzeug._log - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-18 17:19:37,166 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1967, in finalize_request
+    response = self.make_response(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2097, in make_response
+    "The view function did not return a valid response. The"
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2020-01-18 17:19:37,167 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:19:37] "POST / HTTP/1.1" 500 -
+2020-01-18 17:19:37,379 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1967, in finalize_request
+    response = self.make_response(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2097, in make_response
+    "The view function did not return a valid response. The"
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2020-01-18 17:19:37,380 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:19:37] "POST / HTTP/1.1" 500 -
+2020-01-18 17:19:43,478 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1967, in finalize_request
+    response = self.make_response(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2097, in make_response
+    "The view function did not return a valid response. The"
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2020-01-18 17:19:43,478 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:19:43] "POST / HTTP/1.1" 500 -
+2020-01-18 17:19:43,953 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1967, in finalize_request
+    response = self.make_response(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2097, in make_response
+    "The view function did not return a valid response. The"
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2020-01-18 17:19:43,953 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:19:43] "POST / HTTP/1.1" 500 -
+2020-01-18 17:19:44,856 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1967, in finalize_request
+    response = self.make_response(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2097, in make_response
+    "The view function did not return a valid response. The"
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2020-01-18 17:19:44,857 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:19:44] "POST / HTTP/1.1" 500 -
+2020-01-18 17:19:45,327 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1967, in finalize_request
+    response = self.make_response(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2097, in make_response
+    "The view function did not return a valid response. The"
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2020-01-18 17:19:45,327 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:19:45] "POST / HTTP/1.1" 500 -
+2020-01-18 17:19:46,260 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1967, in finalize_request
+    response = self.make_response(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2097, in make_response
+    "The view function did not return a valid response. The"
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2020-01-18 17:19:46,260 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:19:46] "POST / HTTP/1.1" 500 -
+2020-01-18 17:19:46,733 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1967, in finalize_request
+    response = self.make_response(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2097, in make_response
+    "The view function did not return a valid response. The"
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2020-01-18 17:19:46,734 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:19:46] "POST / HTTP/1.1" 500 -
+2020-01-18 17:19:47,770 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1967, in finalize_request
+    response = self.make_response(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2097, in make_response
+    "The view function did not return a valid response. The"
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2020-01-18 17:19:47,770 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:19:47] "POST / HTTP/1.1" 500 -
+2020-01-18 17:19:48,239 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1967, in finalize_request
+    response = self.make_response(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2097, in make_response
+    "The view function did not return a valid response. The"
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2020-01-18 17:19:48,240 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:19:48] "POST / HTTP/1.1" 500 -
+2020-01-18 17:21:53,721 - werkzeug._log - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-18 17:22:11,373 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1967, in finalize_request
+    response = self.make_response(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2097, in make_response
+    "The view function did not return a valid response. The"
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2020-01-18 17:22:11,375 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:22:11] "POST / HTTP/1.1" 500 -
+2020-01-18 17:22:13,038 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1967, in finalize_request
+    response = self.make_response(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2097, in make_response
+    "The view function did not return a valid response. The"
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2020-01-18 17:22:13,039 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:22:13] "POST / HTTP/1.1" 500 -
+2020-01-18 17:22:15,271 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1967, in finalize_request
+    response = self.make_response(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2097, in make_response
+    "The view function did not return a valid response. The"
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2020-01-18 17:22:15,271 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:22:15] "POST / HTTP/1.1" 500 -
+2020-01-18 17:22:16,842 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1967, in finalize_request
+    response = self.make_response(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2097, in make_response
+    "The view function did not return a valid response. The"
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2020-01-18 17:22:16,842 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:22:16] "POST / HTTP/1.1" 500 -
+2020-01-18 17:22:18,959 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1967, in finalize_request
+    response = self.make_response(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2097, in make_response
+    "The view function did not return a valid response. The"
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2020-01-18 17:22:18,960 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:22:18] "POST / HTTP/1.1" 500 -
+2020-01-18 17:22:20,703 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1967, in finalize_request
+    response = self.make_response(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2097, in make_response
+    "The view function did not return a valid response. The"
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2020-01-18 17:22:20,704 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:22:20] "POST / HTTP/1.1" 500 -
+2020-01-18 17:22:22,851 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1967, in finalize_request
+    response = self.make_response(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2097, in make_response
+    "The view function did not return a valid response. The"
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2020-01-18 17:22:22,852 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:22:22] "POST / HTTP/1.1" 500 -
+2020-01-18 17:22:24,532 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1967, in finalize_request
+    response = self.make_response(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2097, in make_response
+    "The view function did not return a valid response. The"
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2020-01-18 17:22:24,533 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:22:24] "POST / HTTP/1.1" 500 -
+2020-01-18 17:22:51,130 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1967, in finalize_request
+    response = self.make_response(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2097, in make_response
+    "The view function did not return a valid response. The"
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2020-01-18 17:22:51,131 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:22:51] "POST / HTTP/1.1" 500 -
+2020-01-18 17:22:53,035 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1967, in finalize_request
+    response = self.make_response(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2097, in make_response
+    "The view function did not return a valid response. The"
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2020-01-18 17:22:53,036 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:22:53] "POST / HTTP/1.1" 500 -
+2020-01-18 17:22:55,071 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1967, in finalize_request
+    response = self.make_response(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2097, in make_response
+    "The view function did not return a valid response. The"
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2020-01-18 17:22:55,072 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:22:55] "POST / HTTP/1.1" 500 -
+2020-01-18 17:22:56,690 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1967, in finalize_request
+    response = self.make_response(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2097, in make_response
+    "The view function did not return a valid response. The"
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2020-01-18 17:22:56,691 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:22:56] "POST / HTTP/1.1" 500 -
+2020-01-18 17:22:58,734 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1967, in finalize_request
+    response = self.make_response(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2097, in make_response
+    "The view function did not return a valid response. The"
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2020-01-18 17:22:58,735 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:22:58] "POST / HTTP/1.1" 500 -
+2020-01-18 17:23:00,304 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1967, in finalize_request
+    response = self.make_response(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2097, in make_response
+    "The view function did not return a valid response. The"
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2020-01-18 17:23:00,304 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:23:00] "POST / HTTP/1.1" 500 -
+2020-01-18 17:23:02,577 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1967, in finalize_request
+    response = self.make_response(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2097, in make_response
+    "The view function did not return a valid response. The"
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2020-01-18 17:23:02,577 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:23:02] "POST / HTTP/1.1" 500 -
+2020-01-18 17:23:04,151 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1967, in finalize_request
+    response = self.make_response(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2097, in make_response
+    "The view function did not return a valid response. The"
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2020-01-18 17:23:04,151 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:23:04] "POST / HTTP/1.1" 500 -
+2020-01-18 17:24:15,858 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1967, in finalize_request
+    response = self.make_response(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2097, in make_response
+    "The view function did not return a valid response. The"
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2020-01-18 17:24:15,859 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:24:15] "POST / HTTP/1.1" 500 -
+2020-01-18 17:24:17,763 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1967, in finalize_request
+    response = self.make_response(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2097, in make_response
+    "The view function did not return a valid response. The"
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2020-01-18 17:24:17,764 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:24:17] "POST / HTTP/1.1" 500 -
+2020-01-18 17:24:19,791 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1967, in finalize_request
+    response = self.make_response(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2097, in make_response
+    "The view function did not return a valid response. The"
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2020-01-18 17:24:19,792 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:24:19] "POST / HTTP/1.1" 500 -
+2020-01-18 17:24:21,486 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1967, in finalize_request
+    response = self.make_response(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2097, in make_response
+    "The view function did not return a valid response. The"
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2020-01-18 17:24:21,487 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:24:21] "POST / HTTP/1.1" 500 -
+2020-01-18 17:24:23,668 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1967, in finalize_request
+    response = self.make_response(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2097, in make_response
+    "The view function did not return a valid response. The"
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2020-01-18 17:24:23,669 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:24:23] "POST / HTTP/1.1" 500 -
+2020-01-18 17:24:25,270 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1967, in finalize_request
+    response = self.make_response(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2097, in make_response
+    "The view function did not return a valid response. The"
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2020-01-18 17:24:25,270 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:24:25] "POST / HTTP/1.1" 500 -
+2020-01-18 17:24:27,484 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1967, in finalize_request
+    response = self.make_response(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2097, in make_response
+    "The view function did not return a valid response. The"
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2020-01-18 17:24:27,484 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:24:27] "POST / HTTP/1.1" 500 -
+2020-01-18 17:24:29,326 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1967, in finalize_request
+    response = self.make_response(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2097, in make_response
+    "The view function did not return a valid response. The"
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2020-01-18 17:24:29,327 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:24:29] "POST / HTTP/1.1" 500 -
+2020-01-18 17:25:34,615 - werkzeug._log - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-18 17:25:41,491 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1967, in finalize_request
+    response = self.make_response(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2097, in make_response
+    "The view function did not return a valid response. The"
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2020-01-18 17:25:41,492 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:25:41] "POST / HTTP/1.1" 500 -
+2020-01-18 17:25:43,190 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1967, in finalize_request
+    response = self.make_response(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2097, in make_response
+    "The view function did not return a valid response. The"
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2020-01-18 17:25:43,190 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:25:43] "POST / HTTP/1.1" 500 -
+2020-01-18 17:25:45,354 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1967, in finalize_request
+    response = self.make_response(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2097, in make_response
+    "The view function did not return a valid response. The"
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2020-01-18 17:25:45,354 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:25:45] "POST / HTTP/1.1" 500 -
+2020-01-18 17:26:24,407 - werkzeug._log - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-18 17:26:28,399 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1967, in finalize_request
+    response = self.make_response(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2097, in make_response
+    "The view function did not return a valid response. The"
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2020-01-18 17:26:28,400 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:26:28] "POST / HTTP/1.1" 500 -
+2020-01-18 17:26:29,302 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1967, in finalize_request
+    response = self.make_response(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2097, in make_response
+    "The view function did not return a valid response. The"
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2020-01-18 17:26:29,302 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:26:29] "POST / HTTP/1.1" 500 -
+2020-01-18 17:26:30,698 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1967, in finalize_request
+    response = self.make_response(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2097, in make_response
+    "The view function did not return a valid response. The"
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2020-01-18 17:26:30,698 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:26:30] "POST / HTTP/1.1" 500 -
+2020-01-18 17:26:31,597 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1967, in finalize_request
+    response = self.make_response(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2097, in make_response
+    "The view function did not return a valid response. The"
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2020-01-18 17:26:31,598 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:26:31] "POST / HTTP/1.1" 500 -
+2020-01-18 17:26:33,046 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1967, in finalize_request
+    response = self.make_response(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2097, in make_response
+    "The view function did not return a valid response. The"
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2020-01-18 17:26:33,046 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:26:33] "POST / HTTP/1.1" 500 -
+2020-01-18 17:26:33,971 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1967, in finalize_request
+    response = self.make_response(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2097, in make_response
+    "The view function did not return a valid response. The"
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2020-01-18 17:26:33,972 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:26:33] "POST / HTTP/1.1" 500 -
+2020-01-18 17:27:16,518 - werkzeug._log - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-18 17:27:20,904 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1967, in finalize_request
+    response = self.make_response(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2097, in make_response
+    "The view function did not return a valid response. The"
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2020-01-18 17:27:20,906 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:27:20] "POST / HTTP/1.1" 500 -
+2020-01-18 17:27:21,861 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1967, in finalize_request
+    response = self.make_response(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2097, in make_response
+    "The view function did not return a valid response. The"
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2020-01-18 17:27:21,861 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:27:21] "POST / HTTP/1.1" 500 -
+2020-01-18 17:27:23,175 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1967, in finalize_request
+    response = self.make_response(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2097, in make_response
+    "The view function did not return a valid response. The"
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2020-01-18 17:27:23,176 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:27:23] "POST / HTTP/1.1" 500 -
+2020-01-18 17:27:24,095 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1967, in finalize_request
+    response = self.make_response(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2097, in make_response
+    "The view function did not return a valid response. The"
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2020-01-18 17:27:24,095 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:27:24] "POST / HTTP/1.1" 500 -
+2020-01-18 17:27:25,429 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1967, in finalize_request
+    response = self.make_response(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2097, in make_response
+    "The view function did not return a valid response. The"
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2020-01-18 17:27:25,430 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:27:25] "POST / HTTP/1.1" 500 -
+2020-01-18 17:27:26,386 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1967, in finalize_request
+    response = self.make_response(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2097, in make_response
+    "The view function did not return a valid response. The"
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2020-01-18 17:27:26,386 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:27:26] "POST / HTTP/1.1" 500 -
+2020-01-18 17:27:27,969 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1967, in finalize_request
+    response = self.make_response(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2097, in make_response
+    "The view function did not return a valid response. The"
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2020-01-18 17:27:27,970 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:27:27] "POST / HTTP/1.1" 500 -
+2020-01-18 17:27:28,913 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1967, in finalize_request
+    response = self.make_response(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2097, in make_response
+    "The view function did not return a valid response. The"
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2020-01-18 17:27:28,914 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:27:28] "POST / HTTP/1.1" 500 -
+2020-01-18 17:27:53,966 - werkzeug._log - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-18 17:27:58,122 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1967, in finalize_request
+    response = self.make_response(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2097, in make_response
+    "The view function did not return a valid response. The"
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2020-01-18 17:27:58,123 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:27:58] "POST / HTTP/1.1" 500 -
+2020-01-18 17:27:59,136 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1967, in finalize_request
+    response = self.make_response(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2097, in make_response
+    "The view function did not return a valid response. The"
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2020-01-18 17:27:59,137 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:27:59] "POST / HTTP/1.1" 500 -
+2020-01-18 17:28:00,898 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1967, in finalize_request
+    response = self.make_response(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2097, in make_response
+    "The view function did not return a valid response. The"
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2020-01-18 17:28:00,899 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:28:00] "POST / HTTP/1.1" 500 -
+2020-01-18 17:28:01,797 - test_app.log_exception - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 1967, in finalize_request
+    response = self.make_response(rv)
+  File "/Users/smorty/42/python/fbbot/fbbot-venv/lib/python3.7/site-packages/flask/app.py", line 2097, in make_response
+    "The view function did not return a valid response. The"
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2020-01-18 17:28:01,798 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:28:01] "POST / HTTP/1.1" 500 -
+2020-01-18 17:28:17,657 - werkzeug._log - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-18 17:28:23,120 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:28:23] "POST / HTTP/1.1" 200 -
+2020-01-18 17:28:45,397 - werkzeug._log - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-18 17:28:59,685 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:28:59] "POST / HTTP/1.1" 200 -
+2020-01-18 17:29:45,776 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:29:45] "POST / HTTP/1.1" 200 -
+2020-01-18 17:29:51,272 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:29:51] "POST / HTTP/1.1" 200 -
+2020-01-18 17:30:05,786 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:30:05] "POST / HTTP/1.1" 200 -
+2020-01-18 17:30:09,176 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:30:09] "POST / HTTP/1.1" 200 -
+2020-01-18 17:30:15,545 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:30:15] "POST / HTTP/1.1" 200 -
+2020-01-18 17:30:18,126 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:30:18] "POST / HTTP/1.1" 200 -
+2020-01-18 17:30:27,113 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:30:27] "POST / HTTP/1.1" 200 -
+2020-01-18 17:30:32,580 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:30:32] "POST / HTTP/1.1" 200 -
+2020-01-18 17:35:27,921 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:35:27] "POST / HTTP/1.1" 200 -
+2020-01-18 17:35:28,451 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:35:28] "POST / HTTP/1.1" 200 -
+2020-01-18 17:35:28,944 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:35:28] "POST / HTTP/1.1" 200 -
+2020-01-18 17:35:29,439 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 17:35:29] "POST / HTTP/1.1" 200 -
+2020-01-18 18:09:42,765 - werkzeug._log - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-18 18:09:57,862 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 18:09:57] "POST / HTTP/1.1" 200 -
+2020-01-18 18:11:15,514 - werkzeug._log - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-18 18:11:20,520 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 18:11:20] "POST / HTTP/1.1" 200 -
+2020-01-18 18:11:33,876 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 18:11:33] "POST / HTTP/1.1" 200 -
+2020-01-18 18:11:53,026 - werkzeug._log - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-18 18:12:08,427 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 18:12:08] "POST / HTTP/1.1" 200 -
+2020-01-18 18:12:16,344 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 18:12:16] "POST / HTTP/1.1" 200 -
+2020-01-18 18:12:20,712 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 18:12:20] "POST / HTTP/1.1" 200 -
+2020-01-18 18:12:58,727 - werkzeug._log - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-18 18:13:15,163 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 18:13:15] "POST / HTTP/1.1" 200 -
+2020-01-18 18:14:59,279 - werkzeug._log - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-18 18:15:12,541 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 18:15:12] "POST / HTTP/1.1" 200 -
+2020-01-18 18:15:15,999 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 18:15:15] "POST / HTTP/1.1" 200 -
+2020-01-18 18:15:18,806 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 18:15:18] "POST / HTTP/1.1" 200 -
+2020-01-18 18:15:21,928 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 18:15:21] "POST / HTTP/1.1" 200 -
+2020-01-18 18:15:31,155 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 18:15:31] "POST / HTTP/1.1" 200 -
+2020-01-18 18:15:34,520 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 18:15:34] "POST / HTTP/1.1" 200 -
+2020-01-18 18:15:37,743 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 18:15:37] "POST / HTTP/1.1" 200 -
+2020-01-18 18:15:41,074 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 18:15:41] "POST / HTTP/1.1" 200 -
+2020-01-18 18:15:43,943 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 18:15:43] "POST / HTTP/1.1" 200 -
+2020-01-18 18:15:46,463 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 18:15:46] "POST / HTTP/1.1" 200 -
+2020-01-18 18:15:49,026 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 18:15:49] "POST / HTTP/1.1" 200 -
+2020-01-18 18:15:51,567 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 18:15:51] "POST / HTTP/1.1" 200 -
+2020-01-18 18:16:07,281 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 18:16:07] "POST / HTTP/1.1" 200 -
+2020-01-18 18:16:11,315 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 18:16:11] "POST / HTTP/1.1" 200 -
+2020-01-18 18:16:15,551 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 18:16:15] "POST / HTTP/1.1" 200 -
+2020-01-18 18:16:31,603 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 18:16:31] "POST / HTTP/1.1" 200 -
+2020-01-18 18:16:34,180 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 18:16:34] "POST / HTTP/1.1" 200 -
+2020-01-18 18:17:05,782 - werkzeug._log - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-18 18:17:19,017 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 18:17:19] "POST / HTTP/1.1" 200 -
+2020-01-18 18:17:22,589 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 18:17:22] "POST / HTTP/1.1" 200 -
+2020-01-18 18:17:26,573 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 18:17:26] "POST / HTTP/1.1" 200 -
+2020-01-18 18:17:30,188 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 18:17:30] "POST / HTTP/1.1" 200 -
+2020-01-18 18:17:33,173 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 18:17:33] "POST / HTTP/1.1" 200 -
+2020-01-18 18:17:35,944 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 18:17:35] "POST / HTTP/1.1" 200 -
+2020-01-18 18:17:38,828 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 18:17:38] "POST / HTTP/1.1" 200 -
+2020-01-18 18:17:41,929 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 18:17:41] "POST / HTTP/1.1" 200 -
+2020-01-18 18:17:44,980 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 18:17:44] "POST / HTTP/1.1" 200 -
+2020-01-18 18:17:47,773 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 18:17:47] "POST / HTTP/1.1" 200 -
+2020-01-18 18:17:52,678 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 18:17:52] "POST / HTTP/1.1" 200 -
+2020-01-18 18:17:55,430 - werkzeug._log - INFO - 127.0.0.1 - - [18/Jan/2020 18:17:55] "POST / HTTP/1.1" 200 -
