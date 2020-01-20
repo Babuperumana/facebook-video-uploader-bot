@@ -2065,3 +2065,457 @@ KeyError: 2
 2020-01-19 00:41:07,045 - werkzeug._log - INFO -  * Debugger PIN: 468-200-002
 2020-01-19 00:42:28,859 - werkzeug._log - INFO -  * Detected change in '/Users/smorty/42/python/fbbot/test_app.py', reloading
 2020-01-19 00:42:28,897 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-20 16:49:50,639 - werkzeug._log - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-20 16:49:50,641 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-20 16:49:50,862 - werkzeug._log - WARNING -  * Debugger is active!
+2020-01-20 16:49:50,869 - werkzeug._log - INFO -  * Debugger PIN: 174-144-332
+2020-01-20 16:50:35,071 - werkzeug._log - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-20 16:50:35,072 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-20 16:50:35,289 - werkzeug._log - WARNING -  * Debugger is active!
+2020-01-20 16:50:35,302 - werkzeug._log - INFO -  * Debugger PIN: 174-144-332
+2020-01-20 17:20:54,649 - werkzeug._log - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-20 17:20:54,651 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-20 17:20:54,867 - werkzeug._log - WARNING -  * Debugger is active!
+2020-01-20 17:20:54,873 - werkzeug._log - INFO -  * Debugger PIN: 174-144-332
+2020-01-20 17:20:57,840 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 17:20:57] "GET /?hub.mode=subscribe&hub.challenge=648875919&hub.verify_token=y7p4mx3rxm HTTP/1.1" 200 -
+2020-01-20 17:24:47,084 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 17:24:47] "POST / HTTP/1.1" 200 -
+2020-01-20 17:24:56,799 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 17:24:56] "POST / HTTP/1.1" 200 -
+2020-01-20 17:25:02,593 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 17:25:02] "POST / HTTP/1.1" 200 -
+2020-01-20 17:25:16,692 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 17:25:16] "POST / HTTP/1.1" 200 -
+2020-01-20 17:25:20,206 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 17:25:20] "POST / HTTP/1.1" 200 -
+2020-01-20 17:25:26,077 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 17:25:26] "POST / HTTP/1.1" 200 -
+2020-01-20 17:25:54,428 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 17:25:54] "POST / HTTP/1.1" 200 -
+2020-01-20 17:27:05,470 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 17:27:05] "POST / HTTP/1.1" 200 -
+2020-01-20 17:27:08,971 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 17:27:08] "POST / HTTP/1.1" 200 -
+2020-01-20 17:27:12,171 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 17:27:12] "POST / HTTP/1.1" 200 -
+2020-01-20 17:27:17,020 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 17:27:17] "POST / HTTP/1.1" 200 -
+2020-01-20 17:27:33,500 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 17:27:33] "POST / HTTP/1.1" 200 -
+2020-01-20 17:27:36,644 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 17:27:36] "POST / HTTP/1.1" 200 -
+2020-01-20 17:27:39,204 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 17:27:39] "POST / HTTP/1.1" 200 -
+2020-01-20 17:27:41,598 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 17:27:41] "POST / HTTP/1.1" 200 -
+2020-01-20 17:27:45,295 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 17:27:45] "POST / HTTP/1.1" 200 -
+2020-01-20 17:27:48,445 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 17:27:48] "POST / HTTP/1.1" 200 -
+2020-01-20 17:30:57,800 - werkzeug._log - INFO -  * Detected change in '/Users/smorty/42/python/fbbot/buttons.py', reloading
+2020-01-20 17:30:57,846 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-20 17:30:58,354 - werkzeug._log - WARNING -  * Debugger is active!
+2020-01-20 17:30:58,374 - werkzeug._log - INFO -  * Debugger PIN: 174-144-332
+2020-01-20 17:31:18,569 - werkzeug._log - INFO -  * Detected change in '/Users/smorty/42/python/fbbot/test_app.py', reloading
+2020-01-20 17:31:18,607 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-20 17:31:18,848 - werkzeug._log - WARNING -  * Debugger is active!
+2020-01-20 17:31:18,855 - werkzeug._log - INFO -  * Debugger PIN: 174-144-332
+2020-01-20 17:34:02,462 - werkzeug._log - INFO -  * Detected change in '/Users/smorty/42/python/fbbot/test_app.py', reloading
+2020-01-20 17:34:02,496 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-20 17:34:02,716 - werkzeug._log - WARNING -  * Debugger is active!
+2020-01-20 17:34:02,722 - werkzeug._log - INFO -  * Debugger PIN: 174-144-332
+2020-01-20 17:34:20,902 - werkzeug._log - INFO -  * Detected change in '/Users/smorty/42/python/fbbot/test_app.py', reloading
+2020-01-20 17:34:20,933 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-20 17:34:21,155 - werkzeug._log - WARNING -  * Debugger is active!
+2020-01-20 17:34:21,162 - werkzeug._log - INFO -  * Debugger PIN: 174-144-332
+2020-01-20 17:34:35,302 - werkzeug._log - INFO -  * Detected change in '/Users/smorty/42/python/fbbot/test_app.py', reloading
+2020-01-20 17:34:35,339 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-20 17:34:35,566 - werkzeug._log - WARNING -  * Debugger is active!
+2020-01-20 17:34:35,572 - werkzeug._log - INFO -  * Debugger PIN: 174-144-332
+2020-01-20 17:34:58,786 - werkzeug._log - INFO -  * Detected change in '/Users/smorty/42/python/fbbot/test_app.py', reloading
+2020-01-20 17:34:58,825 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-20 17:34:59,061 - werkzeug._log - WARNING -  * Debugger is active!
+2020-01-20 17:34:59,067 - werkzeug._log - INFO -  * Debugger PIN: 174-144-332
+2020-01-20 17:37:26,484 - werkzeug._log - INFO -  * Detected change in '/Users/smorty/42/python/fbbot/test_app.py', reloading
+2020-01-20 17:37:26,521 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-20 17:37:26,746 - werkzeug._log - WARNING -  * Debugger is active!
+2020-01-20 17:37:26,753 - werkzeug._log - INFO -  * Debugger PIN: 174-144-332
+2020-01-20 17:49:41,993 - werkzeug._log - INFO -  * Detected change in '/Users/smorty/42/python/fbbot/test_app.py', reloading
+2020-01-20 17:49:42,035 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-20 17:49:42,550 - werkzeug._log - WARNING -  * Debugger is active!
+2020-01-20 17:49:42,558 - werkzeug._log - INFO -  * Debugger PIN: 174-144-332
+2020-01-20 17:51:22,535 - werkzeug._log - INFO -  * Detected change in '/Users/smorty/42/python/fbbot/test_app.py', reloading
+2020-01-20 17:51:22,568 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-20 17:51:22,784 - werkzeug._log - WARNING -  * Debugger is active!
+2020-01-20 17:51:22,790 - werkzeug._log - INFO -  * Debugger PIN: 174-144-332
+2020-01-20 17:51:58,152 - werkzeug._log - INFO -  * Detected change in '/Users/smorty/42/python/fbbot/test_app.py', reloading
+2020-01-20 17:51:58,186 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-20 17:51:58,407 - werkzeug._log - WARNING -  * Debugger is active!
+2020-01-20 17:51:58,413 - werkzeug._log - INFO -  * Debugger PIN: 174-144-332
+2020-01-20 17:52:15,578 - werkzeug._log - INFO -  * Detected change in '/Users/smorty/42/python/fbbot/test_app.py', reloading
+2020-01-20 17:52:15,609 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-20 17:52:15,832 - werkzeug._log - WARNING -  * Debugger is active!
+2020-01-20 17:52:15,838 - werkzeug._log - INFO -  * Debugger PIN: 174-144-332
+2020-01-20 18:02:28,792 - werkzeug._log - INFO -  * Detected change in '/Users/smorty/42/python/fbbot/test_app.py', reloading
+2020-01-20 18:02:28,830 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-20 18:02:29,150 - werkzeug._log - WARNING -  * Debugger is active!
+2020-01-20 18:02:29,156 - werkzeug._log - INFO -  * Debugger PIN: 174-144-332
+2020-01-20 18:02:34,205 - werkzeug._log - INFO -  * Detected change in '/Users/smorty/42/python/fbbot/test_app.py', reloading
+2020-01-20 18:02:34,241 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-20 18:02:34,470 - werkzeug._log - WARNING -  * Debugger is active!
+2020-01-20 18:02:34,476 - werkzeug._log - INFO -  * Debugger PIN: 174-144-332
+2020-01-20 18:02:44,582 - werkzeug._log - INFO -  * Detected change in '/Users/smorty/42/python/fbbot/test_app.py', reloading
+2020-01-20 18:02:44,616 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-20 18:02:44,836 - werkzeug._log - WARNING -  * Debugger is active!
+2020-01-20 18:02:44,842 - werkzeug._log - INFO -  * Debugger PIN: 174-144-332
+2020-01-20 18:03:05,052 - werkzeug._log - INFO -  * Detected change in '/Users/smorty/42/python/fbbot/test_app.py', reloading
+2020-01-20 18:03:05,089 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-20 18:05:50,421 - werkzeug._log - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-20 18:05:50,422 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-20 18:05:50,629 - werkzeug._log - WARNING -  * Debugger is active!
+2020-01-20 18:05:50,635 - werkzeug._log - INFO -  * Debugger PIN: 174-144-332
+2020-01-20 18:05:56,511 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 18:05:56] "POST / HTTP/1.1" 200 -
+2020-01-20 18:06:01,671 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 18:06:01] "POST / HTTP/1.1" 200 -
+2020-01-20 18:07:39,708 - werkzeug._log - INFO -  * Detected change in '/Users/smorty/42/python/fbbot/test_app.py', reloading
+2020-01-20 18:07:39,740 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-20 19:00:45,038 - werkzeug._log - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-20 19:00:45,040 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-20 19:00:45,260 - werkzeug._log - WARNING -  * Debugger is active!
+2020-01-20 19:00:45,267 - werkzeug._log - INFO -  * Debugger PIN: 174-144-332
+2020-01-20 19:00:51,715 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 19:00:51] "POST / HTTP/1.1" 200 -
+2020-01-20 19:00:55,638 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 19:00:55] "POST / HTTP/1.1" 200 -
+2020-01-20 19:00:59,154 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 19:00:59] "POST / HTTP/1.1" 200 -
+2020-01-20 19:01:06,239 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 19:01:06] "POST / HTTP/1.1" 200 -
+2020-01-20 19:01:11,658 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 19:01:11] "POST / HTTP/1.1" 200 -
+2020-01-20 19:01:14,445 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 19:01:14] "POST / HTTP/1.1" 200 -
+2020-01-20 19:01:17,512 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 19:01:17] "POST / HTTP/1.1" 200 -
+2020-01-20 19:01:20,285 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 19:01:20] "POST / HTTP/1.1" 200 -
+2020-01-20 19:01:33,302 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 19:01:33] "POST / HTTP/1.1" 200 -
+2020-01-20 19:02:12,102 - werkzeug._log - INFO -  * Detected change in '/Users/smorty/42/python/fbbot/test_app.py', reloading
+2020-01-20 19:02:12,141 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-20 19:02:12,409 - werkzeug._log - WARNING -  * Debugger is active!
+2020-01-20 19:02:12,438 - werkzeug._log - INFO -  * Debugger PIN: 174-144-332
+2020-01-20 19:07:08,370 - werkzeug._log - INFO -  * Detected change in '/Users/smorty/42/python/fbbot/test_app.py', reloading
+2020-01-20 19:07:08,415 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-20 19:15:47,254 - werkzeug._log - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-20 19:15:47,256 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-20 19:15:47,480 - werkzeug._log - WARNING -  * Debugger is active!
+2020-01-20 19:15:47,502 - werkzeug._log - INFO -  * Debugger PIN: 174-144-332
+2020-01-20 19:16:08,112 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 19:16:08] "POST / HTTP/1.1" 200 -
+2020-01-20 19:16:12,388 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 19:16:12] "POST / HTTP/1.1" 500 -
+2020-01-20 19:16:14,337 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 19:16:14] "POST / HTTP/1.1" 500 -
+2020-01-20 19:16:16,359 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 19:16:16] "POST / HTTP/1.1" 500 -
+2020-01-20 19:16:18,291 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 19:16:18] "POST / HTTP/1.1" 500 -
+2020-01-20 19:18:42,678 - werkzeug._log - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-20 19:18:42,679 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-20 19:18:42,895 - werkzeug._log - WARNING -  * Debugger is active!
+2020-01-20 19:18:42,901 - werkzeug._log - INFO -  * Debugger PIN: 174-144-332
+2020-01-20 19:28:19,305 - werkzeug._log - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-20 19:28:19,305 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-20 19:28:19,517 - werkzeug._log - WARNING -  * Debugger is active!
+2020-01-20 19:28:19,523 - werkzeug._log - INFO -  * Debugger PIN: 174-144-332
+2020-01-20 19:28:43,629 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 19:28:43] "POST / HTTP/1.1" 200 -
+2020-01-20 19:28:46,960 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 19:28:46] "POST / HTTP/1.1" 200 -
+2020-01-20 19:28:52,603 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 19:28:52] "POST / HTTP/1.1" 200 -
+2020-01-20 19:29:26,184 - werkzeug._log - INFO -  * Detected change in '/Users/smorty/42/python/fbbot/messages.py', reloading
+2020-01-20 19:29:26,220 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-20 19:29:26,452 - werkzeug._log - WARNING -  * Debugger is active!
+2020-01-20 19:29:26,458 - werkzeug._log - INFO -  * Debugger PIN: 174-144-332
+2020-01-20 19:29:33,530 - werkzeug._log - INFO -  * Detected change in '/Users/smorty/42/python/fbbot/test_app.py', reloading
+2020-01-20 19:29:33,569 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-20 19:29:33,804 - werkzeug._log - WARNING -  * Debugger is active!
+2020-01-20 19:29:33,810 - werkzeug._log - INFO -  * Debugger PIN: 174-144-332
+2020-01-20 19:42:06,155 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 19:42:06] "POST / HTTP/1.1" 200 -
+2020-01-20 19:43:59,451 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 19:43:59] "POST / HTTP/1.1" 200 -
+2020-01-20 19:45:20,540 - werkzeug._log - INFO -  * Detected change in '/Users/smorty/42/python/fbbot/test_app.py', reloading
+2020-01-20 19:45:20,580 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-20 19:45:20,817 - werkzeug._log - WARNING -  * Debugger is active!
+2020-01-20 19:45:20,824 - werkzeug._log - INFO -  * Debugger PIN: 174-144-332
+2020-01-20 19:45:23,313 - werkzeug._log - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-20 19:45:23,313 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-20 19:45:23,522 - werkzeug._log - WARNING -  * Debugger is active!
+2020-01-20 19:45:23,528 - werkzeug._log - INFO -  * Debugger PIN: 174-144-332
+2020-01-20 19:45:37,339 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 19:45:37] "POST / HTTP/1.1" 200 -
+2020-01-20 19:45:44,308 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 19:45:44] "POST / HTTP/1.1" 200 -
+2020-01-20 19:45:47,882 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 19:45:47] "POST / HTTP/1.1" 200 -
+2020-01-20 19:45:50,646 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 19:45:50] "POST / HTTP/1.1" 200 -
+2020-01-20 19:45:54,590 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 19:45:54] "POST / HTTP/1.1" 200 -
+2020-01-20 19:45:59,594 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 19:45:59] "POST / HTTP/1.1" 200 -
+2020-01-20 19:49:05,689 - werkzeug._log - INFO -  * Detected change in '/Users/smorty/42/python/fbbot/messages.py', reloading
+2020-01-20 19:49:05,727 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-20 19:49:05,942 - werkzeug._log - WARNING -  * Debugger is active!
+2020-01-20 19:49:05,948 - werkzeug._log - INFO -  * Debugger PIN: 174-144-332
+2020-01-20 19:49:44,312 - werkzeug._log - INFO -  * Detected change in '/Users/smorty/42/python/fbbot/buttons.py', reloading
+2020-01-20 19:49:44,348 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-20 19:54:12,790 - werkzeug._log - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-20 19:54:12,791 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-20 19:54:13,009 - werkzeug._log - WARNING -  * Debugger is active!
+2020-01-20 19:54:13,016 - werkzeug._log - INFO -  * Debugger PIN: 174-144-332
+2020-01-20 19:54:33,221 - werkzeug._log - INFO -  * Detected change in '/Users/smorty/42/python/fbbot/messages.py', reloading
+2020-01-20 19:54:33,257 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-20 19:54:42,064 - werkzeug._log - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-20 19:54:42,064 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-20 19:54:42,275 - werkzeug._log - WARNING -  * Debugger is active!
+2020-01-20 19:54:42,281 - werkzeug._log - INFO -  * Debugger PIN: 174-144-332
+2020-01-20 19:54:53,718 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 19:54:53] "POST / HTTP/1.1" 200 -
+2020-01-20 19:54:57,205 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 19:54:57] "POST / HTTP/1.1" 200 -
+2020-01-20 19:56:11,155 - werkzeug._log - INFO -  * Detected change in '/Users/smorty/42/python/fbbot/messages.py', reloading
+2020-01-20 19:56:11,196 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-20 19:56:11,432 - werkzeug._log - WARNING -  * Debugger is active!
+2020-01-20 19:56:11,438 - werkzeug._log - INFO -  * Debugger PIN: 174-144-332
+2020-01-20 19:56:30,644 - werkzeug._log - INFO -  * Detected change in '/Users/smorty/42/python/fbbot/buttons.py', reloading
+2020-01-20 19:56:30,675 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-20 19:57:44,760 - werkzeug._log - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-20 19:57:44,760 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-20 19:57:44,964 - werkzeug._log - WARNING -  * Debugger is active!
+2020-01-20 19:57:44,970 - werkzeug._log - INFO -  * Debugger PIN: 174-144-332
+2020-01-20 19:57:53,326 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 19:57:53] "POST / HTTP/1.1" 200 -
+2020-01-20 19:57:56,881 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 19:57:56] "POST / HTTP/1.1" 200 -
+2020-01-20 19:57:59,860 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 19:57:59] "POST / HTTP/1.1" 200 -
+2020-01-20 19:58:37,995 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 19:58:37] "POST / HTTP/1.1" 200 -
+2020-01-20 19:58:42,997 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 19:58:42] "POST / HTTP/1.1" 200 -
+2020-01-20 20:00:45,720 - werkzeug._log - INFO -  * Detected change in '/Users/smorty/42/python/fbbot/buttons.py', reloading
+2020-01-20 20:00:45,755 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-20 20:00:45,992 - werkzeug._log - WARNING -  * Debugger is active!
+2020-01-20 20:00:45,998 - werkzeug._log - INFO -  * Debugger PIN: 174-144-332
+2020-01-20 20:01:03,084 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 20:01:03] "POST / HTTP/1.1" 200 -
+2020-01-20 20:01:06,989 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 20:01:06] "POST / HTTP/1.1" 200 -
+2020-01-20 20:01:25,080 - werkzeug._log - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-20 20:01:25,080 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-20 20:01:25,302 - werkzeug._log - WARNING -  * Debugger is active!
+2020-01-20 20:01:25,308 - werkzeug._log - INFO -  * Debugger PIN: 174-144-332
+2020-01-20 20:01:30,908 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 20:01:30] "POST / HTTP/1.1" 200 -
+2020-01-20 20:01:35,157 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 20:01:35] "POST / HTTP/1.1" 200 -
+2020-01-20 20:01:38,163 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 20:01:38] "POST / HTTP/1.1" 200 -
+2020-01-20 20:02:59,231 - werkzeug._log - INFO -  * Detected change in '/Users/smorty/42/python/fbbot/buttons.py', reloading
+2020-01-20 20:03:28,250 - werkzeug._log - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-20 20:03:28,250 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-20 20:03:28,467 - werkzeug._log - WARNING -  * Debugger is active!
+2020-01-20 20:03:28,474 - werkzeug._log - INFO -  * Debugger PIN: 174-144-332
+2020-01-20 20:03:35,506 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 20:03:35] "POST / HTTP/1.1" 200 -
+2020-01-20 20:03:40,776 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 20:03:40] "POST / HTTP/1.1" 200 -
+2020-01-20 20:03:43,573 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 20:03:43] "POST / HTTP/1.1" 200 -
+2020-01-20 20:04:09,493 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 20:04:09] "POST / HTTP/1.1" 200 -
+2020-01-20 20:04:13,466 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 20:04:13] "POST / HTTP/1.1" 200 -
+2020-01-20 20:04:37,300 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 20:04:37] "POST / HTTP/1.1" 200 -
+2020-01-20 20:05:58,163 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 20:05:58] "POST / HTTP/1.1" 200 -
+2020-01-20 20:08:47,535 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 20:08:47] "POST / HTTP/1.1" 200 -
+2020-01-20 20:08:59,688 - werkzeug._log - INFO -  * Detected change in '/Users/smorty/42/python/fbbot/test_app.py', reloading
+2020-01-20 20:08:59,730 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-20 20:08:59,964 - werkzeug._log - WARNING -  * Debugger is active!
+2020-01-20 20:08:59,970 - werkzeug._log - INFO -  * Debugger PIN: 174-144-332
+2020-01-20 20:09:19,162 - werkzeug._log - INFO -  * Detected change in '/Users/smorty/42/python/fbbot/test_app.py', reloading
+2020-01-20 20:09:19,200 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-20 20:09:19,445 - werkzeug._log - WARNING -  * Debugger is active!
+2020-01-20 20:09:19,451 - werkzeug._log - INFO -  * Debugger PIN: 174-144-332
+2020-01-20 20:10:29,118 - werkzeug._log - INFO -  * Detected change in '/Users/smorty/42/python/fbbot/test_app.py', reloading
+2020-01-20 20:10:29,151 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-20 21:41:36,659 - werkzeug._log - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-20 21:41:36,661 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-20 21:41:36,876 - werkzeug._log - WARNING -  * Debugger is active!
+2020-01-20 21:41:36,882 - werkzeug._log - INFO -  * Debugger PIN: 174-144-332
+2020-01-20 21:41:43,532 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 21:41:43] "POST / HTTP/1.1" 200 -
+2020-01-20 21:41:47,077 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 21:41:47] "POST / HTTP/1.1" 200 -
+2020-01-20 21:41:50,879 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 21:41:50] "POST / HTTP/1.1" 200 -
+2020-01-20 21:42:00,141 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 21:42:00] "POST / HTTP/1.1" 200 -
+2020-01-20 21:42:03,270 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 21:42:03] "POST / HTTP/1.1" 200 -
+2020-01-20 21:42:13,396 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 21:42:13] "POST / HTTP/1.1" 500 -
+2020-01-20 21:42:13,674 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 21:42:13] "POST / HTTP/1.1" 500 -
+2020-01-20 21:42:14,228 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 21:42:14] "POST / HTTP/1.1" 500 -
+2020-01-20 21:42:14,508 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 21:42:14] "POST / HTTP/1.1" 500 -
+2020-01-20 21:42:15,091 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 21:42:15] "POST / HTTP/1.1" 500 -
+2020-01-20 21:42:15,319 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 21:42:15] "POST / HTTP/1.1" 500 -
+2020-01-20 21:42:16,672 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 21:42:16] "POST / HTTP/1.1" 500 -
+2020-01-20 21:42:16,881 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 21:42:16] "POST / HTTP/1.1" 500 -
+2020-01-20 21:47:00,768 - werkzeug._log - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-20 21:47:00,769 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-20 21:47:00,973 - werkzeug._log - WARNING -  * Debugger is active!
+2020-01-20 21:47:00,979 - werkzeug._log - INFO -  * Debugger PIN: 174-144-332
+2020-01-20 21:47:50,294 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 21:47:50] "POST / HTTP/1.1" 200 -
+2020-01-20 21:47:55,090 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 21:47:55] "POST / HTTP/1.1" 200 -
+2020-01-20 21:47:58,096 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 21:47:58] "POST / HTTP/1.1" 200 -
+2020-01-20 21:48:32,883 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 21:48:32] "POST / HTTP/1.1" 200 -
+2020-01-20 21:48:37,758 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 21:48:37] "POST / HTTP/1.1" 200 -
+2020-01-20 21:48:41,602 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 21:48:41] "POST / HTTP/1.1" 200 -
+2020-01-20 21:48:47,096 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 21:48:47] "POST / HTTP/1.1" 200 -
+2020-01-20 21:48:50,420 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 21:48:50] "POST / HTTP/1.1" 200 -
+2020-01-20 21:48:56,123 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 21:48:56] "POST / HTTP/1.1" 200 -
+2020-01-20 21:49:46,588 - werkzeug._log - INFO -  * Detected change in '/Users/smorty/42/python/fbbot/test_app.py', reloading
+2020-01-20 21:49:46,628 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-20 21:49:46,844 - werkzeug._log - WARNING -  * Debugger is active!
+2020-01-20 21:49:46,852 - werkzeug._log - INFO -  * Debugger PIN: 174-144-332
+2020-01-20 21:49:48,874 - werkzeug._log - INFO -  * Detected change in '/Users/smorty/42/python/fbbot/test_app.py', reloading
+2020-01-20 21:49:48,906 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-20 21:49:49,136 - werkzeug._log - WARNING -  * Debugger is active!
+2020-01-20 21:49:49,143 - werkzeug._log - INFO -  * Debugger PIN: 174-144-332
+2020-01-20 21:50:22,478 - werkzeug._log - INFO -  * Detected change in '/Users/smorty/42/python/fbbot/buttons.py', reloading
+2020-01-20 21:50:22,513 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-20 21:50:22,729 - werkzeug._log - WARNING -  * Debugger is active!
+2020-01-20 21:50:22,735 - werkzeug._log - INFO -  * Debugger PIN: 174-144-332
+2020-01-20 21:51:35,433 - werkzeug._log - INFO -  * Detected change in '/Users/smorty/42/python/fbbot/buttons.py', reloading
+2020-01-20 21:51:35,465 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-20 21:51:35,680 - werkzeug._log - WARNING -  * Debugger is active!
+2020-01-20 21:51:35,686 - werkzeug._log - INFO -  * Debugger PIN: 174-144-332
+2020-01-20 21:51:37,063 - werkzeug._log - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-20 21:51:37,063 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-20 21:51:37,273 - werkzeug._log - WARNING -  * Debugger is active!
+2020-01-20 21:51:37,278 - werkzeug._log - INFO -  * Debugger PIN: 174-144-332
+2020-01-20 21:51:48,389 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 21:51:48] "POST / HTTP/1.1" 200 -
+2020-01-20 21:53:39,461 - werkzeug._log - INFO -  * Detected change in '/Users/smorty/42/python/fbbot/test_app.py', reloading
+2020-01-20 21:53:39,498 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-20 21:53:39,723 - werkzeug._log - WARNING -  * Debugger is active!
+2020-01-20 21:53:39,729 - werkzeug._log - INFO -  * Debugger PIN: 174-144-332
+2020-01-20 21:53:40,544 - werkzeug._log - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-20 21:53:40,544 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-20 21:53:40,761 - werkzeug._log - WARNING -  * Debugger is active!
+2020-01-20 21:53:40,768 - werkzeug._log - INFO -  * Debugger PIN: 174-144-332
+2020-01-20 21:53:53,781 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 21:53:53] "POST / HTTP/1.1" 200 -
+2020-01-20 21:53:57,895 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 21:53:57] "POST / HTTP/1.1" 200 -
+2020-01-20 21:54:42,385 - werkzeug._log - INFO -  * Detected change in '/Users/smorty/42/python/fbbot/test_app.py', reloading
+2020-01-20 21:54:42,421 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-20 21:54:42,637 - werkzeug._log - WARNING -  * Debugger is active!
+2020-01-20 21:54:42,643 - werkzeug._log - INFO -  * Debugger PIN: 174-144-332
+2020-01-20 21:54:48,384 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 21:54:48] "POST / HTTP/1.1" 200 -
+2020-01-20 21:54:58,098 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 21:54:58] "POST / HTTP/1.1" 200 -
+2020-01-20 21:55:13,856 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 21:55:13] "POST / HTTP/1.1" 200 -
+2020-01-20 21:55:16,650 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 21:55:16] "POST / HTTP/1.1" 200 -
+2020-01-20 21:55:34,160 - werkzeug._log - INFO -  * Detected change in '/Users/smorty/42/python/fbbot/test_app.py', reloading
+2020-01-20 21:55:34,196 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-20 21:55:34,429 - werkzeug._log - WARNING -  * Debugger is active!
+2020-01-20 21:55:34,435 - werkzeug._log - INFO -  * Debugger PIN: 174-144-332
+2020-01-20 21:55:39,817 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 21:55:39] "POST / HTTP/1.1" 200 -
+2020-01-20 21:56:00,343 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 21:56:00] "POST / HTTP/1.1" 200 -
+2020-01-20 21:56:02,934 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 21:56:02] "POST / HTTP/1.1" 200 -
+2020-01-20 21:57:26,549 - werkzeug._log - INFO -  * Detected change in '/Users/smorty/42/python/fbbot/buttons.py', reloading
+2020-01-20 21:57:26,583 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-20 21:57:26,798 - werkzeug._log - WARNING -  * Debugger is active!
+2020-01-20 21:57:26,805 - werkzeug._log - INFO -  * Debugger PIN: 174-144-332
+2020-01-20 21:57:34,887 - werkzeug._log - INFO -  * Detected change in '/Users/smorty/42/python/fbbot/buttons.py', reloading
+2020-01-20 21:57:34,925 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-20 21:57:35,870 - werkzeug._log - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-20 21:57:35,870 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-20 21:57:36,079 - werkzeug._log - WARNING -  * Debugger is active!
+2020-01-20 21:57:36,086 - werkzeug._log - INFO -  * Debugger PIN: 174-144-332
+2020-01-20 21:57:56,277 - werkzeug._log - INFO -  * Detected change in '/Users/smorty/42/python/fbbot/test_app.py', reloading
+2020-01-20 21:57:56,311 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-20 21:57:56,529 - werkzeug._log - WARNING -  * Debugger is active!
+2020-01-20 21:57:56,540 - werkzeug._log - INFO -  * Debugger PIN: 174-144-332
+2020-01-20 21:58:03,034 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 21:58:03] "POST / HTTP/1.1" 200 -
+2020-01-20 21:58:14,664 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 21:58:14] "POST / HTTP/1.1" 200 -
+2020-01-20 21:58:17,021 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 21:58:17] "POST / HTTP/1.1" 500 -
+2020-01-20 21:58:17,594 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 21:58:17] "POST / HTTP/1.1" 500 -
+2020-01-20 21:58:18,498 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 21:58:18] "POST / HTTP/1.1" 500 -
+2020-01-20 21:58:19,073 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 21:58:19] "POST / HTTP/1.1" 500 -
+2020-01-20 21:58:20,105 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 21:58:20] "POST / HTTP/1.1" 500 -
+2020-01-20 21:58:20,684 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 21:58:20] "POST / HTTP/1.1" 500 -
+2020-01-20 21:58:21,806 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 21:58:21] "POST / HTTP/1.1" 500 -
+2020-01-20 21:58:22,279 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 21:58:22] "POST / HTTP/1.1" 500 -
+2020-01-20 21:58:31,398 - werkzeug._log - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-20 21:58:31,399 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-20 21:58:31,614 - werkzeug._log - WARNING -  * Debugger is active!
+2020-01-20 21:58:31,621 - werkzeug._log - INFO -  * Debugger PIN: 174-144-332
+2020-01-20 21:58:36,215 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 21:58:36] "POST / HTTP/1.1" 200 -
+2020-01-20 21:58:53,242 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 21:58:53] "POST / HTTP/1.1" 200 -
+2020-01-20 21:58:55,705 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 21:58:55] "POST / HTTP/1.1" 200 -
+2020-01-20 22:12:18,840 - werkzeug._log - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-20 22:12:18,842 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-20 22:12:19,142 - werkzeug._log - WARNING -  * Debugger is active!
+2020-01-20 22:12:19,248 - werkzeug._log - INFO -  * Debugger PIN: 174-144-332
+2020-01-20 22:12:31,941 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 22:12:31] "POST / HTTP/1.1" 200 -
+2020-01-20 22:12:47,178 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 22:12:47] "POST / HTTP/1.1" 200 -
+2020-01-20 22:12:49,631 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 22:12:49] "POST / HTTP/1.1" 200 -
+2020-01-20 22:13:46,095 - werkzeug._log - INFO -  * Detected change in '/Users/smorty/42/python/fbbot/buttons.py', reloading
+2020-01-20 22:13:46,127 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-20 22:13:46,345 - werkzeug._log - WARNING -  * Debugger is active!
+2020-01-20 22:13:46,352 - werkzeug._log - INFO -  * Debugger PIN: 174-144-332
+2020-01-20 22:16:23,701 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 22:16:23] "POST / HTTP/1.1" 200 -
+2020-01-20 22:16:52,840 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 22:16:52] "POST / HTTP/1.1" 200 -
+2020-01-20 22:16:55,816 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 22:16:55] "POST / HTTP/1.1" 200 -
+2020-01-20 22:17:37,647 - werkzeug._log - INFO -  * Detected change in '/Users/smorty/42/python/fbbot/bot_class.py', reloading
+2020-01-20 22:17:37,683 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-20 22:17:37,913 - werkzeug._log - WARNING -  * Debugger is active!
+2020-01-20 22:17:37,921 - werkzeug._log - INFO -  * Debugger PIN: 174-144-332
+2020-01-20 22:17:45,561 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 22:17:45] "POST / HTTP/1.1" 200 -
+2020-01-20 22:17:46,789 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 22:17:46] "POST / HTTP/1.1" 200 -
+2020-01-20 22:17:47,656 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 22:17:47] "POST / HTTP/1.1" 200 -
+2020-01-20 22:17:49,001 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 22:17:49] "POST / HTTP/1.1" 200 -
+2020-01-20 22:17:49,470 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 22:17:49] "POST / HTTP/1.1" 500 -
+2020-01-20 22:17:49,698 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 22:17:49] "POST / HTTP/1.1" 500 -
+2020-01-20 22:17:50,221 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 22:17:50] "POST / HTTP/1.1" 500 -
+2020-01-20 22:17:50,476 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 22:17:50] "POST / HTTP/1.1" 500 -
+2020-01-20 22:17:51,133 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 22:17:51] "POST / HTTP/1.1" 500 -
+2020-01-20 22:17:51,365 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 22:17:51] "POST / HTTP/1.1" 500 -
+2020-01-20 22:17:52,829 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 22:17:52] "POST / HTTP/1.1" 500 -
+2020-01-20 22:17:53,057 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 22:17:53] "POST / HTTP/1.1" 500 -
+2020-01-20 22:17:55,098 - werkzeug._log - INFO -  * Detected change in '/Users/smorty/42/python/fbbot/test_app.py', reloading
+2020-01-20 22:17:55,146 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-20 22:17:55,363 - werkzeug._log - WARNING -  * Debugger is active!
+2020-01-20 22:17:55,369 - werkzeug._log - INFO -  * Debugger PIN: 174-144-332
+2020-01-20 22:18:00,427 - werkzeug._log - INFO -  * Detected change in '/Users/smorty/42/python/fbbot/buttons.py', reloading
+2020-01-20 22:18:00,466 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-20 22:18:00,729 - werkzeug._log - WARNING -  * Debugger is active!
+2020-01-20 22:18:00,750 - werkzeug._log - INFO -  * Debugger PIN: 174-144-332
+2020-01-20 22:18:03,700 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 22:18:03] "POST / HTTP/1.1" 200 -
+2020-01-20 22:18:04,605 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 22:18:04] "POST / HTTP/1.1" 200 -
+2020-01-20 22:18:05,539 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 22:18:05] "POST / HTTP/1.1" 200 -
+2020-01-20 22:18:06,487 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 22:18:06] "POST / HTTP/1.1" 200 -
+2020-01-20 22:18:07,648 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 22:18:07] "POST / HTTP/1.1" 200 -
+2020-01-20 22:18:08,781 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 22:18:08] "POST / HTTP/1.1" 200 -
+2020-01-20 22:18:09,984 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 22:18:09] "POST / HTTP/1.1" 200 -
+2020-01-20 22:18:11,241 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 22:18:11] "POST / HTTP/1.1" 200 -
+2020-01-20 22:18:12,232 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 22:18:12] "POST / HTTP/1.1" 200 -
+2020-01-20 22:18:13,449 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 22:18:13] "POST / HTTP/1.1" 200 -
+2020-01-20 22:18:52,254 - werkzeug._log - INFO -  * Detected change in '/Users/smorty/42/python/fbbot/buttons.py', reloading
+2020-01-20 22:18:52,290 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-20 22:18:52,527 - werkzeug._log - WARNING -  * Debugger is active!
+2020-01-20 22:18:52,534 - werkzeug._log - INFO -  * Debugger PIN: 174-144-332
+2020-01-20 22:18:59,605 - werkzeug._log - INFO -  * Detected change in '/Users/smorty/42/python/fbbot/buttons.py', reloading
+2020-01-20 22:18:59,642 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-20 22:18:59,869 - werkzeug._log - WARNING -  * Debugger is active!
+2020-01-20 22:18:59,876 - werkzeug._log - INFO -  * Debugger PIN: 174-144-332
+2020-01-20 22:19:47,330 - werkzeug._log - INFO -  * Detected change in '/Users/smorty/42/python/fbbot/test_app.py', reloading
+2020-01-20 22:19:47,368 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-20 22:19:47,604 - werkzeug._log - WARNING -  * Debugger is active!
+2020-01-20 22:19:47,611 - werkzeug._log - INFO -  * Debugger PIN: 174-144-332
+2020-01-20 22:19:55,689 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 22:19:55] "POST / HTTP/1.1" 200 -
+2020-01-20 22:19:58,295 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 22:19:58] "POST / HTTP/1.1" 200 -
+2020-01-20 22:20:00,822 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 22:20:00] "POST / HTTP/1.1" 200 -
+2020-01-20 22:20:03,633 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 22:20:03] "POST / HTTP/1.1" 200 -
+2020-01-20 22:21:05,986 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 22:21:05] "POST / HTTP/1.1" 200 -
+2020-01-20 22:21:25,092 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 22:21:25] "POST / HTTP/1.1" 200 -
+2020-01-20 22:22:52,412 - werkzeug._log - INFO -  * Detected change in '/Users/smorty/42/python/fbbot/buttons.py', reloading
+2020-01-20 22:22:52,450 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-20 22:22:52,705 - werkzeug._log - WARNING -  * Debugger is active!
+2020-01-20 22:22:52,712 - werkzeug._log - INFO -  * Debugger PIN: 174-144-332
+2020-01-20 22:23:02,813 - werkzeug._log - INFO -  * Detected change in '/Users/smorty/42/python/fbbot/test_app.py', reloading
+2020-01-20 22:23:02,847 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-20 22:23:03,084 - werkzeug._log - WARNING -  * Debugger is active!
+2020-01-20 22:23:03,091 - werkzeug._log - INFO -  * Debugger PIN: 174-144-332
+2020-01-20 22:23:48,542 - werkzeug._log - INFO -  * Detected change in '/Users/smorty/42/python/fbbot/buttons.py', reloading
+2020-01-20 22:23:48,580 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-20 22:23:48,840 - werkzeug._log - WARNING -  * Debugger is active!
+2020-01-20 22:23:48,871 - werkzeug._log - INFO -  * Debugger PIN: 174-144-332
+2020-01-20 22:24:30,271 - werkzeug._log - INFO -  * Detected change in '/Users/smorty/42/python/fbbot/test_app.py', reloading
+2020-01-20 22:24:30,305 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-20 22:24:30,540 - werkzeug._log - WARNING -  * Debugger is active!
+2020-01-20 22:24:30,547 - werkzeug._log - INFO -  * Debugger PIN: 174-144-332
+2020-01-20 22:24:39,329 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 22:24:39] "POST / HTTP/1.1" 200 -
+2020-01-20 22:24:45,859 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 22:24:45] "POST / HTTP/1.1" 200 -
+2020-01-20 22:24:48,537 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 22:24:48] "POST / HTTP/1.1" 200 -
+2020-01-20 22:24:51,203 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 22:24:51] "POST / HTTP/1.1" 200 -
+2020-01-20 22:24:55,012 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 22:24:55] "POST / HTTP/1.1" 200 -
+2020-01-20 22:24:58,026 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 22:24:58] "POST / HTTP/1.1" 200 -
+2020-01-20 22:25:03,611 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 22:25:03] "POST / HTTP/1.1" 200 -
+2020-01-20 22:25:57,594 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 22:25:57] "POST / HTTP/1.1" 200 -
+2020-01-20 22:26:00,656 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 22:26:00] "POST / HTTP/1.1" 200 -
+2020-01-20 22:26:03,212 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 22:26:03] "POST / HTTP/1.1" 200 -
+2020-01-20 22:31:15,906 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 22:31:15] "POST / HTTP/1.1" 200 -
+2020-01-20 22:31:29,801 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 22:31:29] "POST / HTTP/1.1" 200 -
+2020-01-20 22:31:36,888 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 22:31:36] "POST / HTTP/1.1" 200 -
+2020-01-20 22:31:43,650 - werkzeug._log - INFO - 127.0.0.1 - - [20/Jan/2020 22:31:43] "POST / HTTP/1.1" 200 -
+2020-01-20 22:32:09,083 - werkzeug._log - INFO -  * Detected change in '/Users/smorty/42/python/fbbot/test_app.py', reloading
+2020-01-20 22:32:09,114 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-20 22:32:09,724 - werkzeug._log - WARNING -  * Debugger is active!
+2020-01-20 22:32:09,730 - werkzeug._log - INFO -  * Debugger PIN: 174-144-332
+2020-01-20 23:11:07,628 - werkzeug._log - INFO -  * Detected change in '/Users/smorty/42/python/fbbot/test_app.py', reloading
+2020-01-20 23:11:07,666 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-20 23:11:08,161 - werkzeug._log - WARNING -  * Debugger is active!
+2020-01-20 23:11:08,168 - werkzeug._log - INFO -  * Debugger PIN: 174-144-332
+2020-01-20 23:12:14,833 - werkzeug._log - INFO -  * Detected change in '/Users/smorty/42/python/fbbot/test_app.py', reloading
+2020-01-20 23:12:14,873 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-21 00:20:36,568 - werkzeug._log - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-21 00:20:36,569 - werkzeug._log - INFO -  * Restarting with stat
+2020-01-21 00:20:36,784 - werkzeug._log - WARNING -  * Debugger is active!
+2020-01-21 00:20:36,790 - werkzeug._log - INFO -  * Debugger PIN: 174-144-332
+2020-01-21 00:20:43,887 - werkzeug._log - INFO - 127.0.0.1 - - [21/Jan/2020 00:20:43] "POST / HTTP/1.1" 200 -
+2020-01-21 00:20:46,283 - werkzeug._log - INFO - 127.0.0.1 - - [21/Jan/2020 00:20:46] "POST / HTTP/1.1" 500 -
+2020-01-21 00:20:46,491 - werkzeug._log - INFO - 127.0.0.1 - - [21/Jan/2020 00:20:46] "POST / HTTP/1.1" 500 -
+2020-01-21 00:20:46,968 - werkzeug._log - INFO - 127.0.0.1 - - [21/Jan/2020 00:20:46] "POST / HTTP/1.1" 500 -
+2020-01-21 00:20:47,177 - werkzeug._log - INFO - 127.0.0.1 - - [21/Jan/2020 00:20:47] "POST / HTTP/1.1" 500 -
+2020-01-21 00:20:47,784 - werkzeug._log - INFO - 127.0.0.1 - - [21/Jan/2020 00:20:47] "POST / HTTP/1.1" 500 -
+2020-01-21 00:20:48,003 - werkzeug._log - INFO - 127.0.0.1 - - [21/Jan/2020 00:20:48] "POST / HTTP/1.1" 500 -
+2020-01-21 00:20:49,481 - werkzeug._log - INFO - 127.0.0.1 - - [21/Jan/2020 00:20:49] "POST / HTTP/1.1" 500 -
+2020-01-21 00:20:49,706 - werkzeug._log - INFO - 127.0.0.1 - - [21/Jan/2020 00:20:49] "POST / HTTP/1.1" 500 -

@@ -1,6 +1,10 @@
 from config import admin_name
 
-languages = ['ru', 'en']
+languages = {
+	'ru'	: 'ru_RU',
+	'en'	: 'en_US'
+}
+default_language = 'en'
 
 #########
 #messages
@@ -31,7 +35,7 @@ ask_again = {
 ask_hotel = {
 	'ru' :	"Укажите, где Вы останавливались.\n"\
 			"Введите ссылку на страницу места проживания (booking.com или airbnb.com)",
-	'en' :	"Paste a link to the property page (Booking.com or airbnb.com)",
+	'en' :	"Paste a link to the property page (booking.com or airbnb.com)",
 }
 link_error = {
 	'ru' :	"Упс! Такое ощущение, что эта ссылка не с booking.com или airbnb.com. Проверьте ссылку и попробуйте снова.",
