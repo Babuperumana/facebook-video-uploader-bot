@@ -1,8 +1,10 @@
-import random
 import os
+import sys
+import logging
 
 from flask import Flask, request
 from bot_class import Bot
+from parse_link import parseUrl
 
 import buttons as btn
 import messages as msg
@@ -12,6 +14,18 @@ import config as conf
 
 app = Flask(__name__)
 bot = Bot(conf.access_token)
+
+# exec_dir = os.path.abspath(os.path.dirname(sys.argv[0]))
+logging.basicConfig(
+	format		= '%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+	level		= logging.INFO,
+	handlers	= [
+		logging.FileHandler('fb_stories.log'),
+		logging.StreamHandler()
+	],
+)
+
+logger = logging.getLogger('fb_stories.log')
 
 (LANG, START, HOTEL, DATE, ROOM, STAY, CONFIRM,
 	VIDEO, USERNAME, PHONE, AVATAR, FINISH) = range(12)
@@ -57,7 +71,7 @@ def getLanguage(sender_id, message):
 	language = getPayload(message)
 	if language not in msg.languages:
 		return askLanguage(sender_id)
-	user_data[sender_id]['lang'] = lang
+	user_data[sender_id]['lang'] = language
 	return askToStart(sender_id)
 
 def askToStart(sender_id):
@@ -65,7 +79,7 @@ def askToStart(sender_id):
 		sender_id,
 		msg.greetings[lang(sender_id)]
 	)
-	bot.send_button_message(
+	bot.send_quick_reply_message(
 		sender_id,
 		msg.starting[lang(sender_id)],
 		btn.add_hotel[lang(sender_id)]
@@ -91,12 +105,9 @@ def askHotel(sender_id):
 
 def getHotel(sender_id, message):
 	try:
-		url = message['message']['attachments'][0]['url']
-	except KeyError:
-		url = getText(message)
-	# parse url
-	hotel_data = url
-	if not hotel_data:
+		hotel_data = parseUrl(getText(message))
+	except Exception as err:
+		logger.error(str(err.args))
 		return bot.send_text_message(
 			sender_id,
 			msg.link_error[lang(sender_id)]
@@ -105,7 +116,7 @@ def getHotel(sender_id, message):
 	bot.send_text_message(
 		sender_id,
 		msg.check_place[lang(sender_id)]
-			.format(hotel_data)
+			.format(hotel_data['name'], hotel_data['address'])
 	)
 	return askDate(sender_id)
 
@@ -131,20 +142,22 @@ def getDate(sender_id, message):
 	return askRoomType(sender_id)
 
 def askRoomType(sender_id):
-	bot.send_text_message(
+	bot.send_quick_reply_message(
 		sender_id,
-		msg.ask_room_type[lang(sender_id)]
+		msg.ask_room_type[lang(sender_id)],
+		btn.roomsList(user_data[sender_id]['hotel']['rooms'])
 	)
 	user_data[sender_id]['conv_level'] = ROOM
 
 def getRoomType(sender_id, message):
-	room_type = getText(message)
+	room_type = getPayload(message)
 	if not room_type:
 		return askRoomType(sender_id)
 	user_data[sender_id]['room_type'] = room_type
 	bot.send_text_message(
 		sender_id,
 		msg.check_room[lang(sender_id)]
+			.format(room_type)
 	)
 	return askStayType(sender_id)
 
@@ -174,15 +187,16 @@ def askConfirm(sender_id):
 	lng = lang(sender_id)
 	confirmation_message = (
 		'{ask_confirm}\n{place}\n\n{date}\n\n{room}\n\n{stay}'.format(
-			ask_confirm=msg.ask_confirm[lang],
-			place=msg.check_place[lng].format(ud['hotel']),
+			ask_confirm=msg.ask_confirm[lng],
+			place=msg.check_place[lng].format(
+				ud['hotel']['name'], ud['hotel']['address']),
 			date=msg.check_date[lng].format(ud['date']),
 			room=msg.check_room[lng].format(ud['room_type']),
 			stay=msg.check_stay[lng].format(
 				msg.stays[lng][ud['stay_type'] - 1])
 		)
 	)
-	bot.send_button_message(
+	bot.send_quick_reply_message(
 		sender_id,
 		confirmation_message,
 		btn.confirm_button[lng]
@@ -242,21 +256,23 @@ def getUsername(sender_id, message):
 	return askPhone(sender_id)
 
 def askPhone(sender_id):
-	bot.send_text_message(
+	bot.send_quick_reply_message(
 		sender_id,
-		msg.ask_phone[lang(sender_id)]
+		msg.ask_phone[lang(sender_id)],
+		btn.request_phone[lang(sender_id)]
 	)
 	user_data[sender_id]['conv_level'] = PHONE
 
 def getPhone(sender_id, message):
-	phone = getText(sender_id)
+	phone = getPayload(message)
 	#check_phone
 	if not phone:
-		return bot.send_text_message(
+		return bot.send_quick_reply_message(
 			sender_id,
-			msg.duplicate_phone[lang(sender_id)]
+			msg.duplicate_phone[lang(sender_id)],
+			btn.request_phone[lang(sender_id)]
 		)
-	user_data[sender_id]['phone'] = phone
+	user_data[sender_id]['phone'] = phone.lstrip('+')
 	bot.send_text_message(
 		sender_id,
 		msg.check_phone[lang(sender_id)]
@@ -268,14 +284,14 @@ def askAvatar(sender_id):
 	bot.send_quick_reply_message(
 		sender_id,
 		msg.ask_avatar[lang(sender_id)],
-		btn.skip_button[lang(sender_id)]
+		btn.skip_avatar[lang(sender_id)]
 	)
 	user_data[sender_id]['conv_level'] = AVATAR
 
 def getAvatar(sender_id, message):
-	if getPayload(sender_id) == 'skip':
+	if getPayload(message) == 'skip':
 		return finish(sender_id)
-	avatar = getText(sender_id)
+	avatar = getText(message)
 	#check avatar
 	if not avatar:
 		return askAvatar(sender_id)
@@ -298,10 +314,10 @@ next_level_callbacks = {
 	ROOM		: getRoomType,
 	STAY		: getStayType,
 	CONFIRM		: getConfirm,
-	VIDEO		: askUsername,
-	USERNAME	: askPhone,
-	PHONE		: askAvatar,
-	AVATAR		: finish,
+	VIDEO		: getVideo,
+	USERNAME	: getUsername,
+	PHONE		: getPhone,
+	AVATAR		: getAvatar,
 	FINISH		: askToStart,
 }
 
@@ -319,7 +335,6 @@ back_button_callbacks = {
 	AVATAR		: askPhone,
 	FINISH		: askAvatar,
 }
-
 
 def error(sender_id):
 	bot.send_text_message(
@@ -349,13 +364,11 @@ commands_callbacks = {
 }
 
 def checkCommand(sender_id, message):
-	try:
-		command = message['postback']['payload']
-	except KeyError:
-		try:
-			command = message['message']['text']
-		except KeyError:
-			return False
+	command = getPayload(message)
+	if not command:
+		command = getText(message)
+	if not command:
+		return False
 	try:
 		commands_callbacks[command](sender_id)
 	except KeyError:
@@ -370,10 +383,10 @@ def conversationHandler(message):
 	if not checkCommand(sender_id, message):
 		try:
 			conv_level = user_data[sender_id]['conv_level']
-		except KeyError:
-			return error(sender_id)
-		else:
 			return next_level_callbacks[conv_level](sender_id, message)
+		except Exception as err:
+			logger.error(str(err.args))
+			return error(sender_id)
 
 ####################################
 
@@ -384,7 +397,6 @@ def receiveMessage():
 		return verifyToken(token_sent)
 	else:
 		output = request.get_json()
-		print(output)
 		for event in output['entry']:
 			messaging = event['messaging']
 			for message in messaging:
@@ -397,4 +409,4 @@ def verifyToken(token_sent):
 	return 'Invalid verification token'
 
 if __name__ == "__main__":
-	app.run(debug=True)
+	app.run()

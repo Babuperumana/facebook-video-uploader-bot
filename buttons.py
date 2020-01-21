@@ -52,13 +52,24 @@ navigation = {
 add_hotel = {
 	lang : [
 		{
-			'type'		: 'postback',
-			'title'		: msg.add_place[lang],
-			'payload'	: 'add'
+			'content_type'	: 'text',
+			'title'			: msg.add_place[lang],
+			'payload'		: 'add'
 		}
 	]
 	for lang in msg.languages
 }
+#####
+
+#room type
+def roomsList(rooms_list):
+	return [
+		{
+			'content_type'	: 'text',
+			'title'			: room,
+			'payload'		: room,
+		} for room in rooms_list
+	]
 #####
 
 #stay types
@@ -76,9 +87,9 @@ stay_types = {
 confirm_button = {
 	lang : [
 		{
-			'type'		: 'postback',
-			'title'		: msg.confirmation[lang],
-			'payload'	: 'confirm'
+			'content_type'	: 'text',
+			'title'			: msg.confirmation[lang],
+			'payload'		: 'confirm'
 		}
 	] for lang in msg.languages
 }
@@ -88,13 +99,10 @@ confirm_button = {
 request_phone = {
 	lang : [
 		{
-		'type'		: 'postback',
-		'title'		: msg.share_phone[lang],
-		'payload'	: 'phone'
-		},
-		btn_home[lang], btn_back[lang]
-		]
-		for lang in msg.languages
+			'content_type'	: 'user_phone_number',
+			'title'			: msg.share_phone[lang],
+		}
+	] for lang in msg.languages
 }
 #####
 
@@ -102,9 +110,9 @@ request_phone = {
 skip_avatar = {
 	lang : [ 
 		{
-			'type'		: 'postback',
-			'title'		: msg.skip_button[lang],
-			'payload'	: 'skip'
+			'content_type'	: 'text',
+			'title'			: msg.skip_button[lang],
+			'payload'		: 'skip'
 		}
 	] for lang in msg.languages
 }
