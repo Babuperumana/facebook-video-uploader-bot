@@ -6,21 +6,21 @@ import json
 ###########
 # greetings
 
-payload = {
-	'greeting': json.dumps(
-		[
-			{
-				"locale"	: locale,
-				"text"		: msg.about[lang]
-			} for lang, locale in msg.languages.items()
-		] + [
-			{
-				"locale"	: "default",
-				"text"		: msg.about[msg.default_language],
-			}
-		]
-	)
-}
+# payload = {
+# 	'greeting': json.dumps(
+# 		[
+# 			{
+# 				"locale"	: locale,
+# 				"text"		: msg.about[lang]
+# 			} for lang, locale in msg.languages.items()
+# 		] + [
+# 			{
+# 				"locale"	: "default",
+# 				"text"		: msg.about[msg.default_language],
+# 			}
+# 		]
+# 	)
+# }
 
 #############
 # get started
@@ -32,6 +32,18 @@ payload = {
 # 		}
 # 	)
 # }
+
+#################
+#whitelist domain
+
+payload = {
+	"whitelisted_domains": json.dumps(
+		[
+			"https://ya.ru",
+			"https://1c1602d0.ngrok.io",
+		]
+	)
+}
 
 url = "https://graph.facebook.com/v5.0/me/messenger_profile?access_token={}".format(os.getenv('ACCESS_TOKEN'))
 responce = requests.post(url, payload)

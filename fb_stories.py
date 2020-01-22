@@ -1,8 +1,10 @@
 import os
 import sys
-import logging
+import requests
+from io import BytesIO
+from logging import getLogger
 
-from flask import Flask, request
+from flask import Flask, request, render_template
 from bot_class import Bot
 from parse_link import parseUrl
 
@@ -15,17 +17,7 @@ import config as conf
 app = Flask(__name__)
 bot = Bot(conf.access_token)
 
-# exec_dir = os.path.abspath(os.path.dirname(sys.argv[0]))
-logging.basicConfig(
-	format		= '%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-	level		= logging.INFO,
-	handlers	= [
-		logging.FileHandler('fb_stories.log'),
-		logging.StreamHandler()
-	],
-)
-
-logger = logging.getLogger('fb_stories.log')
+logger = getLogger('main')
 
 (LANG, START, HOTEL, DATE, ROOM, STAY, CONFIRM,
 	VIDEO, USERNAME, PHONE, AVATAR, FINISH) = range(12)
@@ -57,9 +49,16 @@ def getPayload(message):
 		pass
 	return None
 
+def getAttachment(message):
+	try:
+		return message['message']['attachments'][0]
+	except KeyError:
+		return None
+
 ####################################
 
 def askLanguage(sender_id):
+	print(bot.open_test_webview(sender_id))
 	bot.send_quick_reply_message(
 		sender_id,
 		msg.ask_language,
@@ -291,10 +290,28 @@ def askAvatar(sender_id):
 def getAvatar(sender_id, message):
 	if getPayload(message) == 'skip':
 		return finish(sender_id)
-	avatar = getText(message)
-	#check avatar
-	if not avatar:
+	attachment = getAttachment(message)
+	print(message)
+	if not attachment or attachment['type'] != 'image':
 		return askAvatar(sender_id)
+	avatar_file = requests.get(attachment['payload']['url'])
+	avatar_bytes = BytesIO()
+	avatar_bytes.write(avatar_file.content)
+	avatar_bytes.seek(0)
+	filename = '{name}.{extension}'.format(
+		name=sender_id,
+		extension=avatar_file.headers['Content-Type'].split('/')[-1]
+	)
+
+	with open(filename, 'wb+') as f:
+		f.write(avatar_bytes.read())
+	# boto3.client('s3', **conf.aws_kwargs).upload_fileobj(
+	# 	avatar_bytes, conf.bucket_name,
+	# 	'{path}/{filename}'.format(
+	# 		path=conf.images_path, filename=filename),
+	# 		ExtraArgs={'ACL':'public-read'}
+	# )
+
 	return finish(sender_id)
 
 def finish(sender_id):
@@ -379,34 +396,45 @@ def conversationHandler(message):
 	sender_id = message['sender']['id']
 	if not sender_id in user_data:
 		user_data[sender_id] = {}
-
-	if not checkCommand(sender_id, message):
-		try:
+	try:
+		if not checkCommand(sender_id, message):
 			conv_level = user_data[sender_id]['conv_level']
 			return next_level_callbacks[conv_level](sender_id, message)
-		except Exception as err:
-			logger.error(str(err.args))
-			return error(sender_id)
+	except Exception as err:
+		logger.error(str(err.args))
+		return error(sender_id)
+	except KeyboardInterrupt:
+		return
 
 ####################################
 
-@app.route("/", methods=['GET', 'POST'])
+@app.route('/webhook', methods=['POST'])
 def receiveMessage():
-	if request.method == 'GET':
-		token_sent = request.args.get("hub.verify_token")
-		return verifyToken(token_sent)
-	else:
-		output = request.get_json()
-		for event in output['entry']:
-			messaging = event['messaging']
-			for message in messaging:
-				conversationHandler(message)
-		return 'good'
+	output = request.get_json()
+	for event in output['entry']:
+		messaging = event['messaging']
+		for message in messaging:
+			conversationHandler(message)
+	return "200"
 
-def verifyToken(token_sent):
+@app.route('/webhook', methods=['GET'])
+def verifyToken():
+	token_sent = request.args.get('hub.verify_token')
 	if token_sent == conf.verify_token:
-		return request.args.get("hub.challenge")
-	return 'Invalid verification token'
+		return request.args.get('hub.challenge')
+	return "Invalid verification token"
+
+@app.route('/date', methods=['GET'])
+def calendar():
+	return render_template('datepicker/index.html')
+
+# @app.route('/templates', methods=['GET'])
+# def scripts(filename):
+# 	print(request)
+# 	with open('templates/{}'.format(filename), 'r') as f:
+# 		return f.read()
+# 	# get_file_content(filename)
+# 	# return render_template('datepicker/index.html')
 
 if __name__ == "__main__":
 	app.run()

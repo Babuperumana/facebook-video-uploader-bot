@@ -371,3 +371,21 @@ class Bot:
 		)
 		result = response.json()
 		return result
+
+	def open_test_webview(self, recipient_id, notification_type=NotificationType.regular):
+		return self.send_message(recipient_id, {
+			"attachment" : { 
+				"type"		: "template",
+				"payload"	: {
+					"template_type"	: "button",
+					"text"			: "Click button and choose",
+					"buttons"		: [{
+						"type"					: "web_url",
+						"url"					: "https://1c1602d0.ngrok.io/date",
+						"title"					: "Choose Date",
+						"webview_height_ratio"	: "tall",
+						"messenger_extensions"	: "true"
+					}]
+				} 
+			}
+		}, notification_type)

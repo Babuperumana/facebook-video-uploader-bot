@@ -3,3 +3,5 @@ fbbot-venv/
 __pycache__/
 env
 fb_stories.log
+templates/
+calendar/

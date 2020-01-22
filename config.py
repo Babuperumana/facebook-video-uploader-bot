@@ -4,7 +4,7 @@ from os import getenv
 #bot
 access_token	= getenv('ACCESS_TOKEN')
 verify_token	= getenv('VERIFY_TOKEN')
-log_name		= 'bot.log'
+log_name		= 'fb_stories.log'
 admin_name		= 'admin'
 
 #api
