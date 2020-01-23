@@ -39,8 +39,7 @@ import json
 payload = {
 	"whitelisted_domains": json.dumps(
 		[
-			"https://ya.ru",
-			"https://1c1602d0.ngrok.io",
+			"https://d4a30c7b.ngrok.io",
 		]
 	)
 }

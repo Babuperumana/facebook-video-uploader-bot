@@ -381,10 +381,11 @@ class Bot:
 					"text"			: "Click button and choose",
 					"buttons"		: [{
 						"type"					: "web_url",
-						"url"					: "https://1c1602d0.ngrok.io/date",
+						"url"					: "https://d4a30c7b.ngrok.io/date?sender_id={}".format(recipient_id),
 						"title"					: "Choose Date",
-						"webview_height_ratio"	: "tall",
-						"messenger_extensions"	: "true"
+						"webview_height_ratio"	: "compact",
+						"messenger_extensions"	: "true",
+						"webview_share_button"	: "hide"
 					}]
 				} 
 			}

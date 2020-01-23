@@ -4,7 +4,7 @@ import requests
 from io import BytesIO
 from logging import getLogger
 
-from flask import Flask, request, render_template
+from flask import Flask, request, render_template, redirect
 from bot_class import Bot
 from parse_link import parseUrl
 
@@ -408,6 +408,13 @@ def conversationHandler(message):
 
 ####################################
 
+@app.route('/webhook', methods=['GET'])
+def verifyToken():
+	token_sent = request.args.get('hub.verify_token')
+	if token_sent == conf.verify_token:
+		return request.args.get('hub.challenge')
+	return "Invalid verification token"
+
 @app.route('/webhook', methods=['POST'])
 def receiveMessage():
 	output = request.get_json()
@@ -417,24 +424,24 @@ def receiveMessage():
 			conversationHandler(message)
 	return "200"
 
-@app.route('/webhook', methods=['GET'])
-def verifyToken():
-	token_sent = request.args.get('hub.verify_token')
-	if token_sent == conf.verify_token:
-		return request.args.get('hub.challenge')
-	return "Invalid verification token"
-
 @app.route('/date', methods=['GET'])
 def calendar():
-	return render_template('datepicker/index.html')
+	sender_id = request.args.get('sender_id')
+	return render_template(
+		'testdate.html',
+		sender_id=sender_id,
+		ask_date=msg.ask_date['ru'],
+	)
 
-# @app.route('/templates', methods=['GET'])
-# def scripts(filename):
-# 	print(request)
-# 	with open('templates/{}'.format(filename), 'r') as f:
-# 		return f.read()
-# 	# get_file_content(filename)
-# 	# return render_template('datepicker/index.html')
+@app.route('/date', methods=['POST'])
+def dateFromPicker():
+	sender_id = request.form.get('sender_id')
+	date_in = request.form.get('check_in')
+	date_out = request.form.get('check_out')
+	print(sender_id)
+	print(date_in)
+	print(date_out)
+	return "Дата записана! Окно можно закрыть."
 
 if __name__ == "__main__":
 	app.run()

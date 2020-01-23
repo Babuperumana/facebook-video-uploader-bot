@@ -56,8 +56,8 @@ check_place = {
 	'en' :	"*Place of stay:*\n{}, {}",
 }
 ask_date = {
-	'ru' :	"В какие *даты (примерно)* Вы останавливались в этом месте?",
-	'en' :	"When (approximately) did you stay at this place?",
+	'ru' :	"В какие <strong>даты (примерно)</strong> Вы останавливались в этом месте?",
+	'en' :	"<strong>When (approximately)</strong> did you stay at this place?",
 }
 later_date = {
 	'ru' :	"Пожалуйста, выберите прошедшую дату",
