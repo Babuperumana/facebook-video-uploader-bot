@@ -1,10 +1,10 @@
 import os
 import sys
 import requests
+import flask
 from io import BytesIO
 from logging import getLogger
-
-from flask import Flask, request, render_template, redirect
+# from flask import Flask, request, render_template, redirect, abort, jsonify
 from bot_class import Bot
 from parse_link import parseUrl
 
@@ -14,7 +14,7 @@ import config as conf
 
 ####################################
 
-app = Flask(__name__)
+app = flask.Flask(__name__)
 bot = Bot(conf.access_token)
 
 logger = getLogger('main')
@@ -58,7 +58,6 @@ def getAttachment(message):
 ####################################
 
 def askLanguage(sender_id):
-	print(bot.open_test_webview(sender_id))
 	bot.send_quick_reply_message(
 		sender_id,
 		msg.ask_language,
@@ -103,40 +102,43 @@ def askHotel(sender_id):
 	user_data[sender_id]['conv_level'] = HOTEL
 
 def getHotel(sender_id, message):
+	bot.send_action(sender_id, 'typing_on')
 	try:
 		hotel_data = parseUrl(getText(message))
 	except Exception as err:
+		bot.send_action(sender_id, 'typing_off')
 		logger.error(str(err.args))
 		return bot.send_text_message(
 			sender_id,
 			msg.link_error[lang(sender_id)]
 		)
+	bot.send_action(sender_id, 'typing_off')
 	user_data[sender_id]['hotel'] = hotel_data
 	bot.send_text_message(
 		sender_id,
 		msg.check_place[lang(sender_id)]
 			.format(hotel_data['name'], hotel_data['address'])
 	)
-	return askDate(sender_id)
+	return askDates(sender_id)
 
-def askDate(sender_id):
-	bot.send_text_message(
+def askDates(sender_id):
+	bot.open_date_webview(
 		sender_id,
-		msg.ask_date[lang(sender_id)]
+		msg.ask_date[lang(sender_id)],
+		msg.pick_dates[lang(sender_id)]
 	)
 	user_data[sender_id]['conv_level'] = DATE
 
-def getDate(sender_id, message):
-	date = getText(message)
-	#parse date
-	parsed_date = date
-	if not parsed_date:
-		return askDate(sender_id)
-	user_data[sender_id]['date'] = parsed_date
+def getDates(sender_id, message):
+	dates = "{date_in} - {date_out}".format(
+		date_in = message.get('check_in'),
+		date_out = message.get('check_out')
+	)
+	user_data[sender_id]['date'] = dates
 	bot.send_text_message(
 		sender_id,
 		msg.check_date[lang(sender_id)]
-			.format(parsed_date)
+			.format(dates)
 	)
 	return askRoomType(sender_id)
 
@@ -291,7 +293,6 @@ def getAvatar(sender_id, message):
 	if getPayload(message) == 'skip':
 		return finish(sender_id)
 	attachment = getAttachment(message)
-	print(message)
 	if not attachment or attachment['type'] != 'image':
 		return askAvatar(sender_id)
 	avatar_file = requests.get(attachment['payload']['url'])
@@ -327,7 +328,7 @@ next_level_callbacks = {
 	LANG		: getLanguage,
 	START		: getToStart,
 	HOTEL		: getHotel,
-	DATE		: getDate,
+	DATE		: getDates,
 	ROOM		: getRoomType,
 	STAY		: getStayType,
 	CONFIRM		: getConfirm,
@@ -343,7 +344,7 @@ back_button_callbacks = {
 	START		: askLanguage,
 	HOTEL		: askToStart,
 	DATE		: askHotel,
-	ROOM		: askDate,
+	ROOM		: askDates,
 	STAY		: askRoomType,
 	CONFIRM		: askStayType,
 	VIDEO		: askConfirm,
@@ -410,38 +411,45 @@ def conversationHandler(message):
 
 @app.route('/webhook', methods=['GET'])
 def verifyToken():
-	token_sent = request.args.get('hub.verify_token')
-	if token_sent == conf.verify_token:
-		return request.args.get('hub.challenge')
-	return "Invalid verification token"
+	token_sent = flask.request.args.get('hub.verify_token')
+	if token_sent != conf.verify_token:
+		return flask.abort(403)
+	return flask.request.args.get('hub.challenge')
 
 @app.route('/webhook', methods=['POST'])
 def receiveMessage():
-	output = request.get_json()
+	output = flask.request.get_json()
 	for event in output['entry']:
 		messaging = event['messaging']
 		for message in messaging:
 			conversationHandler(message)
-	return "200"
+	return flask.jsonify(success=True)
 
 @app.route('/date', methods=['GET'])
 def calendar():
-	sender_id = request.args.get('sender_id')
-	return render_template(
-		'testdate.html',
+	try:
+		sender_id = flask.request.args.get('sender_id')
+	except:
+		flask.abort(403)
+	if not sender_id in user_data:
+		flask.abort(403)
+	return flask.render_template(
+		'datepicker.html',
 		sender_id=sender_id,
 		ask_date=msg.ask_date['ru'],
 	)
 
 @app.route('/date', methods=['POST'])
 def dateFromPicker():
-	sender_id = request.form.get('sender_id')
-	date_in = request.form.get('check_in')
-	date_out = request.form.get('check_out')
-	print(sender_id)
-	print(date_in)
-	print(date_out)
-	return "Дата записана! Окно можно закрыть."
+	try:
+		sender_id = flask.request.form.get('sender_id')
+	except:
+		return flask.abort(403)
+	getDates(sender_id, dict(flask.request.form))
+	return flask.redirect(
+		"https://www.messenger.com/closeWindow/?display_text='{}'"
+			.format("Thanks! You can close the window now.")
+	)
 
 if __name__ == "__main__":
 	app.run()

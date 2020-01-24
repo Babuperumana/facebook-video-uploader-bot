@@ -39,7 +39,7 @@ import json
 payload = {
 	"whitelisted_domains": json.dumps(
 		[
-			"https://d4a30c7b.ngrok.io",
+			os.getenv('WEB_ADDRESS'),
 		]
 	)
 }
