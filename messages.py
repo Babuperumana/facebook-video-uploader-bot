@@ -55,7 +55,7 @@ check_place = {
 	'ru' :	"*Место пребывания:*\n{}, {}",
 	'en' :	"*Place of stay:*\n{}, {}",
 }
-ask_date = {
+ask_dates = {
 	'ru' :	"В какие *даты (примерно)* Вы останавливались в этом месте?",
 	'en' :	"*When (approximately)* did you stay at this place?",
 }
@@ -63,11 +63,11 @@ later_date = {
 	'ru' :	"Пожалуйста, выберите прошедшую дату",
 	'en' :	"Please, select a past date",
 }
-conflict_date = {
+conflict_dates = {
 	'ru' :	"Дата отъезда не может быть раньше даты заселения",
 	'en' :	"Check out date can't be before check in",
 }
-check_date = {
+check_dates = {
 	'ru' :	"*Даты пребывания:*\n{}",
 	'en' :	"*Dates of stay:*\n{}"
 }
@@ -92,12 +92,12 @@ ask_confirm = {
 	'en' :	"*Confirm before submit video*\n",
 }
 ask_video =	{
-	'ru' :	"Нажмите на скрепочку, чтобы отправить видео",
-	'en' :	"Press this button 📎 to choose and send a video",
+	'ru' :	"Нажмите *«Загрузить видео»*, чтобы отправить видео",
+	'en' :	"Press *“Upload Video”* to choose and send a video",
 }
 not_a_video = {
-	'ru' :	"Это не видео! Нажмите на скрепку, чтобы отправить видео",
-	'en' :	"It seems like this is not a video. Press this button 📎 to choose and send a video",
+	'ru' :	"Это не видео! Нажмите *«Загрузить видео»*, чтобы отправить видео",
+	'en' :	"It seems like this is not a video. Press *“Upload Video”* to choose and send a video",
 }
 video_thanks = {
 	'ru' :	"Спасибо, Ваши Stay Stories загружены\n🔥💪😍",
@@ -171,7 +171,11 @@ add_place = {
 }
 pick_dates = {
 	'ru' :	'Выбрать даты',
-	'en' :	'Choose dates',
+	'en' :	'Choose Dates',
+}
+upload_video = {
+	'ru' :	'Загрузить видео',
+	'en' :	'Upload Video'
 }
 months = {
 	'ru' :	['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь',

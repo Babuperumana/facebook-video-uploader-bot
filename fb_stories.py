@@ -2,9 +2,9 @@ import os
 import sys
 import requests
 import flask
+from hashlib import md5
 from io import BytesIO
 from logging import getLogger
-# from flask import Flask, request, render_template, redirect, abort, jsonify
 from bot_class import Bot
 from parse_link import parseUrl
 
@@ -19,7 +19,7 @@ bot = Bot(conf.access_token)
 
 logger = getLogger('main')
 
-(LANG, START, HOTEL, DATE, ROOM, STAY, CONFIRM,
+(LANG, START, HOTEL, DATES, ROOM, STAY, CONFIRM,
 	VIDEO, USERNAME, PHONE, AVATAR, FINISH) = range(12)
 
 user_data = {}
@@ -30,7 +30,7 @@ def lang(sender_id):
 	try:
 		return user_data[sender_id]['lang']
 	except KeyError:
-		return 'ru'
+		return 'en'
 
 def getText(message):
 	try:
@@ -72,7 +72,7 @@ def getLanguage(sender_id, message):
 	user_data[sender_id]['lang'] = language
 	return askToStart(sender_id)
 
-def askToStart(sender_id):
+def askToStart(sender_id, message=None):
 	bot.send_text_message(
 		sender_id,
 		msg.greetings[lang(sender_id)]
@@ -122,22 +122,22 @@ def getHotel(sender_id, message):
 	return askDates(sender_id)
 
 def askDates(sender_id):
-	bot.open_date_webview(
-		sender_id,
-		msg.ask_date[lang(sender_id)],
+	bot.open_webview(
+		sender_id, 'dates',
+		msg.ask_dates[lang(sender_id)],
 		msg.pick_dates[lang(sender_id)]
 	)
-	user_data[sender_id]['conv_level'] = DATE
+	user_data[sender_id]['conv_level'] = DATES
 
 def getDates(sender_id, message):
 	dates = "{date_in} - {date_out}".format(
 		date_in = message.get('check_in'),
 		date_out = message.get('check_out')
 	)
-	user_data[sender_id]['date'] = dates
+	user_data[sender_id]['dates'] = dates
 	bot.send_text_message(
 		sender_id,
-		msg.check_date[lang(sender_id)]
+		msg.check_dates[lang(sender_id)]
 			.format(dates)
 	)
 	return askRoomType(sender_id)
@@ -187,11 +187,11 @@ def askConfirm(sender_id):
 	ud = user_data[sender_id]
 	lng = lang(sender_id)
 	confirmation_message = (
-		'{ask_confirm}\n{place}\n\n{date}\n\n{room}\n\n{stay}'.format(
+		'{ask_confirm}\n{place}\n\n{dates}\n\n{room}\n\n{stay}'.format(
 			ask_confirm=msg.ask_confirm[lng],
 			place=msg.check_place[lng].format(
 				ud['hotel']['name'], ud['hotel']['address']),
-			date=msg.check_date[lng].format(ud['date']),
+			dates=msg.check_dates[lng].format(ud['dates']),
 			room=msg.check_room[lng].format(ud['room_type']),
 			stay=msg.check_stay[lng].format(
 				msg.stays[lng][ud['stay_type'] - 1])
@@ -211,20 +211,31 @@ def getConfirm(sender_id, message):
 	return askVideo(sender_id)
 
 def askVideo(sender_id):
-	bot.send_text_message(
-		sender_id,
-		msg.ask_video[lang(sender_id)]
+	bot.open_webview(
+		sender_id, 'video',
+		msg.ask_video[lang(sender_id)],
+		msg.upload_video[lang(sender_id)]
 	)
 	user_data[sender_id]['conv_level'] = VIDEO
 
 def getVideo(sender_id, message):
-	video = getText(message)
-	if not video:
-		return bot.send_text_message(
-			sender_id,
-			msg.not_a_video[lang(sender_id)]
+	try:
+		video = message['video']
+	except KeyError:
+		return bot.open_webview(
+			sender_id, 'video',
+			msg.not_a_video[lang(sender_id)],
+			msg.upload_video[lang(sender_id)]
 		)
-	#api call to save video
+	video_hash = md5(video.read()).hexdigest()
+	video.seek(0)
+	video_name = "{sender_id}_{dates}_{hash}.{extension}".format(
+		sender_id=sender_id,
+		dates=user_data[sender_id]['dates'],
+		hash=video_hash,
+		extension=video.mimetype.split('/')[-1]
+	)
+	video.save(video_name)
 	#if user is registered:
 	#	return finish(sender_id)
 	bot.send_text_message(
@@ -328,7 +339,7 @@ next_level_callbacks = {
 	LANG		: getLanguage,
 	START		: getToStart,
 	HOTEL		: getHotel,
-	DATE		: getDates,
+	DATES		: getDates,
 	ROOM		: getRoomType,
 	STAY		: getStayType,
 	CONFIRM		: getConfirm,
@@ -343,7 +354,7 @@ back_button_callbacks = {
 	LANG		: askLanguage,
 	START		: askLanguage,
 	HOTEL		: askToStart,
-	DATE		: askHotel,
+	DATES		: askHotel,
 	ROOM		: askDates,
 	STAY		: askRoomType,
 	CONFIRM		: askStayType,
@@ -382,11 +393,7 @@ commands_callbacks = {
 }
 
 def checkCommand(sender_id, message):
-	command = getPayload(message)
-	if not command:
-		command = getText(message)
-	if not command:
-		return False
+	command = getPayload(message) or getText(message)
 	try:
 		commands_callbacks[command](sender_id)
 	except KeyError:
@@ -398,14 +405,17 @@ def conversationHandler(message):
 	if not sender_id in user_data:
 		user_data[sender_id] = {}
 	try:
-		if not checkCommand(sender_id, message):
-			conv_level = user_data[sender_id]['conv_level']
-			return next_level_callbacks[conv_level](sender_id, message)
+		if checkCommand(sender_id, message):
+			return
+		conv_level = user_data[sender_id]['conv_level']
+		return next_level_callbacks[conv_level](sender_id, message)
+	except KeyError:
+		return askLanguage(sender_id)
 	except Exception as err:
 		logger.error(str(err.args))
 		return error(sender_id)
 	except KeyboardInterrupt:
-		return
+		return stop(sender_id)
 
 ####################################
 
@@ -425,27 +435,45 @@ def receiveMessage():
 			conversationHandler(message)
 	return flask.jsonify(success=True)
 
-@app.route('/date', methods=['GET'])
-def calendar():
+@app.route('/dates', methods=['GET'])
+@app.route('/video', methods=['GET'])
+def getWebview():
 	try:
 		sender_id = flask.request.args.get('sender_id')
 	except:
 		flask.abort(403)
 	if not sender_id in user_data:
 		flask.abort(403)
-	return flask.render_template(
-		'datepicker.html',
-		sender_id=sender_id,
-		ask_date=msg.ask_date['ru'],
-	)
+	if flask.request.path == '/dates':
+		template_kwargs = {
+			'template_name_or_list'	: 'datepicker.html',
+			'sender_id'				: sender_id,
+			'ask_dates'				: msg.ask_dates[lang(sender_id)],
+			'pick_dates_btn'		: msg.pick_dates[lang(sender_id)],
+		}
+	elif flask.request.path == '/video':
+		template_kwargs = {
+			'template_name_or_list'	: 'video_upload.html',
+			'sender_id'				: sender_id,
+			'upload_btn'			: msg.upload_video[lang(sender_id)],
+		}
+	else:
+		flask.abort(404)
+	return flask.render_template(**template_kwargs)
 
-@app.route('/date', methods=['POST'])
-def dateFromPicker():
+@app.route('/dates', methods=['POST'])
+@app.route('/video', methods=['POST'])
+def postWebview():
 	try:
 		sender_id = flask.request.form.get('sender_id')
 	except:
 		return flask.abort(403)
-	getDates(sender_id, dict(flask.request.form))
+	if flask.request.path == '/dates':
+		getDates(sender_id, dict(flask.request.form))
+	elif flask.request.path == '/video':
+		getVideo(sender_id, dict(flask.request.files))
+	else:
+		flask.abort(404)
 	return flask.redirect(
 		"https://www.messenger.com/closeWindow/?display_text='{}'"
 			.format("Thanks! You can close the window now.")
