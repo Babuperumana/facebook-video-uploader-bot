@@ -11,6 +11,7 @@ from dateutil.parser import parse
 from bot_class import Bot
 from parse_link import parseUrl
 
+import api_requests as api
 import buttons as btn
 import messages as msg
 import config as conf
@@ -66,6 +67,7 @@ def askLanguage(sender_id):
 		msg.ask_language,
 		btn.language
 	)
+	logger.info('User connected - id: {}'.format(sender_id))
 	user_data[sender_id]['conv_level'] = LANG
 
 def getLanguage(sender_id, message):
@@ -219,6 +221,16 @@ def getConfirm(sender_id, message):
 	confirm = getPayload(message)
 	if confirm != 'confirm':
 		return confirm(sender_id)
+	user_data[sender_id]['user_is_known'] = api.updateUser(sender_id)
+	user_from_db = api.getUser(bot.get_user_info(sender_id))
+	user_data[sender_id]['uuid'] = user_from_db['uuid']
+	user_data[sender_id]['username'] = user_from_db['username']
+	logger.info("Got user ID from API: {}"
+		.format(user_data[sender_id]['uuid']))
+	user_data[sender_id]['hotel_id'] = \
+		api.getHotel(user_data[sender_id]['hotel'])
+	logger.info("Got hotel ID from API: {}"
+		.format(user_data[sender_id]['hotel_id']))
 	return askVideo(sender_id)
 
 def askVideo(sender_id):
@@ -247,13 +259,14 @@ def getVideo(sender_id, message):
 		extension=video.mimetype.split('/')[-1]
 	)
 	video.save(video_name)
-	#if user is registered:
-	#	return finish(sender_id)
+
 	bot.send_text_message(
 		sender_id,
 		msg.video_thanks[lang(sender_id)]
 	)
-	return askUsername(sender_id)
+	if not user_data[sender_id]['user_is_known']:
+		return askUsername(sender_id)
+	return finish(sender_id)
 
 def askUsername(sender_id):
 	bot.send_text_message(
@@ -343,6 +356,7 @@ def finish(sender_id):
 		msg.finish[lang(sender_id)]
 	)
 	user_data[sender_id]['conv_level'] = FINISH
+	del(user_data[sender_id])
 
 ####################################
 
@@ -387,7 +401,7 @@ def stop(sender_id):
 		sender_id,
 		msg.conv_ended[lang(sender_id)]
 	)
-	user_data[sender_id].pop('conv_level', None)
+	del(user_data[sender_id])
 
 def back(sender_id):
 	try:
