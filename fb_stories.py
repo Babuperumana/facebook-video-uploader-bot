@@ -5,6 +5,9 @@ import flask
 from hashlib import md5
 from io import BytesIO
 from logging import getLogger
+from datetime import date, timedelta
+from dateutil.parser import parse
+
 from bot_class import Bot
 from parse_link import parseUrl
 
@@ -130,9 +133,17 @@ def askDates(sender_id):
 	user_data[sender_id]['conv_level'] = DATES
 
 def getDates(sender_id, message):
+	date_in = parse(message.get('check_in'))
+	date_out = parse(message.get('check_out'))
+	if date_in > date_out:
+		return bot.open_webview(
+			sender_id, 'dates',
+			msg.conflict_dates[lang(sender_id)],
+			msg.pick_dates[lang(sender_id)]
+		)
 	dates = "{date_in} - {date_out}".format(
-		date_in = message.get('check_in'),
-		date_out = message.get('check_out')
+		date_in = date_in.strftime("%Y.%m.%d"),
+		date_out = date_out.strftime("%Y.%m.%d")
 	)
 	user_data[sender_id]['dates'] = dates
 	bot.send_text_message(
@@ -435,45 +446,56 @@ def receiveMessage():
 			conversationHandler(message)
 	return flask.jsonify(success=True)
 
+def withSenderID(func):
+	def checkSenderID(*args, **kwargs):
+		try:
+			sender_id = flask.request.args.get('sender_id')
+		except:
+			flask.abort(403)
+		if not sender_id in user_data:
+			flask.abort(403)
+		return func(sender_id, *args, **kwargs)
+	checkSenderID.__name__ = func.__name__
+	return checkSenderID
+
 @app.route('/dates', methods=['GET'])
+@withSenderID
+def openDatesWebview(sender_id):
+	today = date.today()
+	return flask.render_template('datepicker.html',
+		title=msg.dates_title[lang(sender_id)],
+		sender_id=sender_id,
+		ask_dates=msg.ask_dates[lang(sender_id)],
+		pick_dates_btn=msg.pick_dates[lang(sender_id)],
+		today=today.strftime('%Y-%m-%d'),
+		max_date=(today + timedelta(days=100)).strftime('%Y-%m-%d')
+	)
+
 @app.route('/video', methods=['GET'])
-def getWebview():
-	try:
-		sender_id = flask.request.args.get('sender_id')
-	except:
-		flask.abort(403)
-	if not sender_id in user_data:
-		flask.abort(403)
-	if flask.request.path == '/dates':
-		template_kwargs = {
-			'template_name_or_list'	: 'datepicker.html',
-			'sender_id'				: sender_id,
-			'ask_dates'				: msg.ask_dates[lang(sender_id)],
-			'pick_dates_btn'		: msg.pick_dates[lang(sender_id)],
-		}
-	elif flask.request.path == '/video':
-		template_kwargs = {
-			'template_name_or_list'	: 'video_upload.html',
-			'sender_id'				: sender_id,
-			'upload_btn'			: msg.upload_video[lang(sender_id)],
-		}
-	else:
-		flask.abort(404)
-	return flask.render_template(**template_kwargs)
+@withSenderID
+def openVideoWebview(sender_id):
+	return flask.render_template('video_upload.html',
+		sender_id=sender_id,
+		upload_btn=msg.upload_video[lang(sender_id)],
+	)
 
 @app.route('/dates', methods=['POST'])
+def getDatesFromWebview():
+	data_func = getDates
+	data_form = dict(flask.request.form)
+	return processRequest(data_func, data_form)
+
 @app.route('/video', methods=['POST'])
-def postWebview():
-	try:
-		sender_id = flask.request.form.get('sender_id')
-	except:
-		return flask.abort(403)
-	if flask.request.path == '/dates':
-		getDates(sender_id, dict(flask.request.form))
-	elif flask.request.path == '/video':
-		getVideo(sender_id, dict(flask.request.files))
-	else:
-		flask.abort(404)
+def getVideoFromWebview():
+	data_func =	getVideo
+	data_form = dict(flask.request.files)
+	return processRequest(data_func, data_form)
+
+def processRequest(data_func, data_form):
+	data_func(
+		flask.request.form.get('sender_id'),
+		data_form
+	)
 	return flask.redirect(
 		"https://www.messenger.com/closeWindow/?display_text='{}'"
 			.format("Thanks! You can close the window now.")

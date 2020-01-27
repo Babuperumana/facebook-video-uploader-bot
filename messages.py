@@ -55,6 +55,10 @@ check_place = {
 	'ru' :	"*Место пребывания:*\n{}, {}",
 	'en' :	"*Place of stay:*\n{}, {}",
 }
+dates_title = {
+	'ru' :	"Даты пребывания",
+	'en' :	"Dates of stay",
+}
 ask_dates = {
 	'ru' :	"В какие *даты (примерно)* Вы останавливались в этом месте?",
 	'en' :	"*When (approximately)* did you stay at this place?",
