@@ -2,9 +2,10 @@ import os
 import sys
 import requests
 import flask
+import boto3
 from hashlib import md5
 from io import BytesIO
-from logging import getLogger
+from logging import getLogger, INFO, ERROR
 from datetime import date, timedelta
 from dateutil.parser import parse
 
@@ -34,7 +35,7 @@ def lang(sender_id):
 	try:
 		return user_data[sender_id]['lang']
 	except KeyError:
-		return 'en'
+		return msg.default_language
 
 def getText(message):
 	try:
@@ -222,15 +223,15 @@ def getConfirm(sender_id, message):
 	if confirm != 'confirm':
 		return confirm(sender_id)
 	user_data[sender_id]['user_is_known'] = api.updateUser(sender_id)
-	user_from_db = api.getUser(bot.get_user_info(sender_id))
-	user_data[sender_id]['uuid'] = user_from_db['uuid']
-	user_data[sender_id]['username'] = user_from_db['username']
-	logger.info("Got user ID from API: {}"
-		.format(user_data[sender_id]['uuid']))
-	user_data[sender_id]['hotel_id'] = \
-		api.getHotel(user_data[sender_id]['hotel'])
-	logger.info("Got hotel ID from API: {}"
-		.format(user_data[sender_id]['hotel_id']))
+	# user_from_db = api.getUser(bot.get_user_info(sender_id))
+	# user_data[sender_id]['uuid'] = user_from_db['uuid']
+	# user_data[sender_id]['username'] = user_from_db['username']
+	# logger.info("Got user ID from API: {}"
+	# 	.format(user_data[sender_id]['uuid']))
+	# user_data[sender_id]['hotel_id'] = \
+	# 	api.getHotel(user_data[sender_id]['hotel'])
+	# logger.info("Got hotel ID from API: {}"
+	# 	.format(user_data[sender_id]['hotel_id']))
 	return askVideo(sender_id)
 
 def askVideo(sender_id):
@@ -250,16 +251,41 @@ def getVideo(sender_id, message):
 			msg.not_a_video[lang(sender_id)],
 			msg.upload_video[lang(sender_id)]
 		)
+	bot.send_action(sender_id, 'typing_on')
+	logger.info('Got video from {}'.format(sender_id))
 	video_hash = md5(video.read()).hexdigest()
 	video.seek(0)
-	video_name = "{sender_id}_{dates}_{hash}.{extension}".format(
+	filename = "{path}/{sender_id}_{dates}_{hash}.{extension}".format(
+		path=conf.videos_path,
 		sender_id=sender_id,
 		dates=user_data[sender_id]['dates'],
 		hash=video_hash,
-		extension=video.mimetype.split('/')[-1]
+		extension=video.filename.split('.')[-1]
 	)
-	video.save(video_name)
+	# api.postStory(user_data[sender_id], filename)
+	video.save(filename)
 
+	# s3 = boto3.client('s3', **conf.aws_kwargs)
+	# bucket_location = s3.get_bucket_location(Bucket=conf.bucket_name)
+	# try:
+	# 	video_bytes = BytesIO(video.read())
+	# 	s3.upload_fileobj(
+	# 		video_bytes, conf.bucket_name, filename,
+	# 		ExtraArgs={'ACL':'public-read'}
+	# 	)
+	# except Exception as err:
+	# 	log_level = ERROR
+	# 	status_msg = 'Downloading failed because {}:\n{}'.format(
+	# 		type(err).__name__, str(err.args))
+	# else:
+	# 	log_level = INFO
+	# 	status_msg = 'Saved: https://s3-{}.amazonaws.com/{}/{}'.format(
+	# 		bucket_location['LocationConstraint'],
+	# 		conf.bucket_name, filename
+	# 	)
+	# logger.log(log_level, status_msg)
+
+	bot.send_action(sender_id, 'typing_off')
 	bot.send_text_message(
 		sender_id,
 		msg.video_thanks[lang(sender_id)]
@@ -277,12 +303,21 @@ def askUsername(sender_id):
 
 def getUsername(sender_id, message):
 	username = getText(message)
-	#check username
 	if not username:
-		return bot.send_text_message(
+		bot.send_text_message(
 			sender_id,
 			msg.wrong_username[lang(sender_id)]
 		)
+		return askUsername(sender_id)
+	# username_is_unique = api.updateUser(
+	# 	sender_id,
+	# 	username=username
+	# )
+	# if not username_is_unique:
+	# 	bot.send_text_message(
+	# 		sender_id,
+	# 		msg.duplicate_username[lang(sender_id)])
+	# 	return askUsername(sender_id)
 	user_data[sender_id]['username'] = username
 	bot.send_text_message(
 		sender_id,
@@ -301,14 +336,18 @@ def askPhone(sender_id):
 
 def getPhone(sender_id, message):
 	phone = getPayload(message)
-	#check_phone
 	if not phone:
 		return bot.send_quick_reply_message(
 			sender_id,
 			msg.duplicate_phone[lang(sender_id)],
 			btn.request_phone[lang(sender_id)]
 		)
+	user_data[sender_id]['user_is_known'] = True
 	user_data[sender_id]['phone'] = phone.lstrip('+')
+	# api.updateUser(
+	# 	sender_id,
+	# 	phone=user_data[sender_id]['phone']
+	# )
 	bot.send_text_message(
 		sender_id,
 		msg.check_phone[lang(sender_id)]
@@ -327,6 +366,7 @@ def askAvatar(sender_id):
 def getAvatar(sender_id, message):
 	if getPayload(message) == 'skip':
 		return finish(sender_id)
+	bot.send_action(sender_id, 'typing_on')
 	attachment = getAttachment(message)
 	if not attachment or attachment['type'] != 'image':
 		return askAvatar(sender_id)
@@ -334,7 +374,8 @@ def getAvatar(sender_id, message):
 	avatar_bytes = BytesIO()
 	avatar_bytes.write(avatar_file.content)
 	avatar_bytes.seek(0)
-	filename = '{name}.{extension}'.format(
+	filename = '{path}/{name}.{extension}'.format(
+		path=conf.images_path,
 		name=sender_id,
 		extension=avatar_file.headers['Content-Type'].split('/')[-1]
 	)
@@ -347,7 +388,8 @@ def getAvatar(sender_id, message):
 	# 		path=conf.images_path, filename=filename),
 	# 		ExtraArgs={'ACL':'public-read'}
 	# )
-
+	# api.updateUser(sender_id, avatar=filename)
+	bot.send_action(sender_id, 'typing_off')
 	return finish(sender_id)
 
 def finish(sender_id):
@@ -506,13 +548,11 @@ def getVideoFromWebview():
 	return processRequest(data_func, data_form)
 
 def processRequest(data_func, data_form):
-	data_func(
-		flask.request.form.get('sender_id'),
-		data_form
-	)
+	sender_id = flask.request.form.get('sender_id')
+	data_func(sender_id, data_form)
 	return flask.redirect(
 		"https://www.messenger.com/closeWindow/?display_text='{}'"
-			.format("Thanks! You can close the window now.")
+			.format(msg.close_window[lang(sender_id)])
 	)
 
 if __name__ == "__main__":

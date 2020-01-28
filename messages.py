@@ -22,25 +22,25 @@ about = {
 }
 
 greetings = {
-	'ru' :	"*Приветствуем Вас в Stay Stories!* 🙌\n\n"\
+	'ru' :	"Приветствуем Вас в Stay Stories! 🙌\n\n"\
 			"У Вас есть видео 📹, которыми Вы хотите поделиться? 😉\n\n"\
 			"Если возникли какие либо сложности или вопросы, напишите нам - {}"\
 			"\n\nСменить язык - /language".format(admin_name),
-	'en' :	"*Welcome to Stay Stories!* 🙌🏼\n\n"\
+	'en' :	"Welcome to Stay Stories! 🙌🏼\n\n"\
 			"Upload your video stories 📹 and earn money 🤑🤑🤑\n\n"\
 			"If any issues or questions arise, text us - {}"\
 			"\n\nChange the language - /language".format(admin_name),
 }
 starting = {
-	'ru' :	"Перед тем как загрузить свои видео, дайте знать *где и когда* они были сняты.\n"\
-			"*Нажмите «Добавить место пребывания»*👇",
-	'en' :	"Before you upload videos, let us know *where and when* these videos was shot.\n"\
-			"*Press “Add a Place of Stay”*👇",
+	'ru' :	"Перед тем как загрузить свои видео, дайте знать где и когда они были сняты.\n"\
+			"Нажмите «Добавить место пребывания»👇",
+	'en' :	"Before you upload videos, let us know where and when these videos was shot.\n"\
+			"Press “Add a Place of Stay”👇",
 }
 ask_again = {
 	'ru' :	"Вы не добавили место пребывания.\n"\
-			"*Нажмите «Добавить место пребывания»*👇",
-	'en' :	"*Press “Add a Place of Stay”*👇",
+			"Нажмите «Добавить место пребывания»👇",
+	'en' :	"Press “Add a Place of Stay”👇",
 }
 ask_hotel = {
 	'ru' :	"Укажите, где Вы останавливались.\n"\
@@ -52,16 +52,16 @@ link_error = {
 	'en' :	"Ooops! It seems like the link is wrong. Check the link and try again.",
 }
 check_place = {
-	'ru' :	"*Место пребывания:*\n{}, {}",
-	'en' :	"*Place of stay:*\n{}, {}",
+	'ru' :	"Место пребывания:\n{}, {}",
+	'en' :	"Place of stay:\n{}, {}",
 }
 dates_title = {
 	'ru' :	"Даты пребывания",
 	'en' :	"Dates of stay",
 }
 ask_dates = {
-	'ru' :	"В какие *даты (примерно)* Вы останавливались в этом месте?",
-	'en' :	"*When (approximately)* did you stay at this place?",
+	'ru' :	"В какие даты (примерно) Вы останавливались в этом месте?",
+	'en' :	"When (approximately) did you stay at this place?",
 }
 later_date = {
 	'ru' :	"Пожалуйста, выберите прошедшую дату",
@@ -72,45 +72,45 @@ conflict_dates = {
 	'en' :	"Check out date can't be before check in",
 }
 check_dates = {
-	'ru' :	"*Даты пребывания:*\n{}",
-	'en' :	"*Dates of stay:*\n{}"
+	'ru' :	"Даты пребывания:\n{}",
+	'en' :	"Dates of stay:\n{}"
 }
 ask_room_type =	{
 	'ru' :	"Выберите тип комнаты, в которой Вы останавливались 👇",
 	'en' :	"Choose a Room Type you stayed at:",
 }
 check_room = {
-	'ru' :	"*Тип комнаты:*\n{}",
-	'en' :	"*Room type:*\n{}"
+	'ru' :	"Тип комнаты:\n{}",
+	'en' :	"Room type:\n{}"
 }
 ask_stay_type =	{
 	'ru' :	"Выберите тип пребывания",
 	'en' :	"Choose a Type of stay:",
 }
 check_stay = {
-	'ru' :	"*Тип пребывания:*\n{}",
-	'en' :	"*Type of stay:*\n{}"
+	'ru' :	"Тип пребывания:\n{}",
+	'en' :	"Type of stay:\n{}"
 }
 ask_confirm = {
-	'ru' :	"*Проверьте, перед тем как отправить видео:*\n",
-	'en' :	"*Confirm before submit video*\n",
+	'ru' :	"Проверьте, перед тем как отправить видео:\n",
+	'en' :	"Confirm before submit video\n",
 }
 ask_video =	{
-	'ru' :	"Нажмите *«Загрузить видео»*, чтобы отправить видео",
-	'en' :	"Press *“Upload Video”* to choose and send a video",
+	'ru' :	"Нажмите «Загрузить видео», чтобы отправить видео",
+	'en' :	"Press “Upload Video” to choose and send a video",
 }
 not_a_video = {
-	'ru' :	"Это не видео! Нажмите *«Загрузить видео»*, чтобы отправить видео",
-	'en' :	"It seems like this is not a video. Press *“Upload Video”* to choose and send a video",
+	'ru' :	"Это не видео! Нажмите «Загрузить видео», чтобы отправить видео",
+	'en' :	"It seems like this is not a video. Press “Upload Video” to choose and send a video",
 }
 video_thanks = {
 	'ru' :	"Спасибо, Ваши Stay Stories загружены\n🔥💪😍",
 	'en' :	"Thanks! Your Stay Stories has been uploaded",
 }
 ask_username = {
-	'ru' :	"*Под каким аккаунтом* показывать Ваши видео в приложении Stay Stories?\n\n"\
-			"Введите *никнейм* (латиницей)\nПример: bigboss",
-	'en' :	"*Enter username* that will bee used to display your stories in the Stay Stories App.\n\n"\
+	'ru' :	"Под каким аккаунтом показывать Ваши видео в приложении Stay Stories?\n\n"\
+			"Введите никнейм (латиницей)\nПример: bigboss",
+	'en' :	"Enter username that will bee used to display your stories in the Stay Stories App.\n\n"\
 			"e.g., bigboss",
 }
 wrong_username = {
@@ -122,28 +122,28 @@ duplicate_username = {
 	'en' :	"This username already exists",
 }
 username_success = {
-	'ru' :	"Аккаунт *{}* создан",
-	'en' :	"Account *{}* has been created",
+	'ru' :	"Аккаунт {} создан",
+	'en' :	"Account {} has been created",
 }
 ask_phone =	{
-	'ru' :	"Поделитесь *номером телефона* на который Вам будет отправлен проверочный код при заходе в приложение Stay Stories.\n\n"\
-			"Нажмите *«Поделиться номером телефона»*",
-	'en' :	"Share your *cell number* so you can get a code when log in to the Stay Stories App",
+	'ru' :	"Поделитесь номером телефона на который Вам будет отправлен проверочный код при заходе в приложение Stay Stories.\n\n"\
+			"Нажмите «Поделиться номером телефона»",
+	'en' :	"Share your cell number so you can get a code when log in to the Stay Stories App",
 }
 duplicate_phone = {
 	'ru' :	"Пользователь с этим номером уже существует",
 	'en' :	"Account with this phone already exists",
 }
 check_phone = {
-	'ru' :	"*Номер телефона:*\n{}",
-	'en' :	"*Phone number:*\n{}"
+	'ru' :	"Номер телефона:\n{}",
+	'en' :	"Phone number:\n{}"
 }
 ask_avatar = {
 	'ru' :	"Загрузите изображение для своего аккаунта, или нажмите «Пропустить»\n",
 	'en' :	"Upload an image for the account (or press “Skip”)",
 }
 finish = {
-	'ru' :	"Загрузите еще видео или нажмите *«Домой»*, чтобы добавить видео с нового места пребывания!",
+	'ru' :	"Загрузите еще видео или нажмите «Домой», чтобы добавить видео с нового места пребывания!",
 	'en' :	"Upload more video or press “Home” button to add videos from another place of stay",
 }
 error_msg = {
@@ -153,6 +153,10 @@ error_msg = {
 conv_ended = {
 	'ru' :	"Завершено",
 	'en' :	"Conversation ended",
+}
+close_window = {
+	'ru' :	"Спасибо! Закройте окно для продолжения.",
+	'en' :	"Thanks! Close the window to continue.",	
 }
 
 ########

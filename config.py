@@ -6,6 +6,8 @@ access_token	= getenv('ACCESS_TOKEN')
 verify_token	= getenv('VERIFY_TOKEN')
 log_name		= 'fb_stories.log'
 admin_name		= 'admin'
+videos_path		= 'fbbot/videos'
+images_path		= 'fbbot/images'
 
 #api
 api_prefix		= getenv('API_BRANCH')
