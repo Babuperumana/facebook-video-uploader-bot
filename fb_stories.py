@@ -128,7 +128,7 @@ def getHotel(sender_id, message):
 	return askDates(sender_id)
 
 def askDates(sender_id):
-	bot.open_webview(
+	bot.send_webview_message(
 		sender_id, 'dates',
 		msg.ask_dates[lang(sender_id)],
 		msg.pick_dates[lang(sender_id)]
@@ -139,7 +139,7 @@ def getDates(sender_id, message):
 	date_in = parse(message.get('check_in'))
 	date_out = parse(message.get('check_out'))
 	if date_in > date_out:
-		return bot.open_webview(
+		return bot.send_webview_message(
 			sender_id, 'dates',
 			msg.conflict_dates[lang(sender_id)],
 			msg.pick_dates[lang(sender_id)]
@@ -193,7 +193,7 @@ def getStayType(sender_id, message):
 	bot.send_text_message(
 		sender_id,
 		msg.check_stay[lang(sender_id)]
-			.format(msg.stays[lang(sender_id)][stay_type - 1])
+			.format(msg.stays[lang(sender_id)][stay_type])
 	)
 	return askConfirm(sender_id)
 
@@ -208,7 +208,7 @@ def askConfirm(sender_id):
 			dates=msg.check_dates[lng].format(ud['dates']),
 			room=msg.check_room[lng].format(ud['room_type']),
 			stay=msg.check_stay[lng].format(
-				msg.stays[lng][ud['stay_type'] - 1])
+				msg.stays[lng][ud['stay_type']])
 		)
 	)
 	bot.send_quick_reply_message(
@@ -235,7 +235,7 @@ def getConfirm(sender_id, message):
 	return askVideo(sender_id)
 
 def askVideo(sender_id):
-	bot.open_webview(
+	bot.send_webview_message(
 		sender_id, 'video',
 		msg.ask_video[lang(sender_id)],
 		msg.upload_video[lang(sender_id)]
@@ -246,7 +246,7 @@ def getVideo(sender_id, message):
 	try:
 		video = message['video']
 	except KeyError:
-		return bot.open_webview(
+		return bot.send_webview_message(
 			sender_id, 'video',
 			msg.not_a_video[lang(sender_id)],
 			msg.upload_video[lang(sender_id)]
@@ -393,12 +393,12 @@ def getAvatar(sender_id, message):
 	return finish(sender_id)
 
 def finish(sender_id):
-	bot.send_text_message(
-		sender_id,
-		msg.finish[lang(sender_id)]
+	bot.send_webview_message(
+		sender_id, 'video',
+		msg.finish[lang(sender_id)],
+		msg.upload_video[lang(sender_id)]
 	)
 	user_data[sender_id]['conv_level'] = FINISH
-	del(user_data[sender_id])
 
 ####################################
 
@@ -443,7 +443,10 @@ def stop(sender_id):
 		sender_id,
 		msg.conv_ended[lang(sender_id)]
 	)
-	del(user_data[sender_id])
+	try:
+		del user_data[sender_id]
+	except KeyError:
+		pass
 
 def back(sender_id):
 	try:

@@ -1,7 +1,7 @@
 fbbot-venv/
 .vscode/
 __pycache__/
+templates/
+fbbot/
 env
 fb_stories.log
-templates/
-calendar/

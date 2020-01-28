@@ -68,8 +68,9 @@ def roomsList(rooms_list):
 			'content_type'	: 'text',
 			'title'			: room,
 			'payload'		: room,
-		} for room in rooms_list
+		} for _, room in zip(range(13), rooms_list)
 	]
+# max 13 buttons are allowed by facebook api
 #####
 
 #stay types
@@ -77,9 +78,9 @@ stay_types = {
 	lang : [
 		{
 			'content_type'	: 'text',
-			'title'			: msg.stays[lang][i],
-			'payload'		: 'stay{}'.format(i + 1)
-		} for i in range(len(msg.stays[lang]))
+			'title'			: stay_type,
+			'payload'		: 'stay{}'.format(index)
+		} for index, stay_type in enumerate(msg.stays[lang])
 	] for lang in msg.languages
 }
 

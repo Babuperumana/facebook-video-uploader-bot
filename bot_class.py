@@ -152,7 +152,7 @@ class Bot:
 
 		return None
 
-	def open_webview(self, recipient_id, webview_type, ask_msg, button_msg, notification_type=NotificationType.regular):
+	def send_webview_message(self, recipient_id, webview_type, ask_msg, button_msg, notification_type=NotificationType.regular):
 		datepicker_url = (
 			"{server_address}/{webview_type}?sender_id={sender_id}".format(
 				server_address=os.getenv('WEB_ADDRESS'),
